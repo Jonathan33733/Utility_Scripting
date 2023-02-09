@@ -1,0 +1,15 @@
+[package]
+name = "nos_assignment"
+version = "0.1.0"
+authors = ["Seb Blair <seb.blair@cantebury.ac.uk>"]
+edition = "2021"
+
+[dependencies]
+rand = "0.7"
+rayon = "1.5"
+structopt = "0.3"
+
+[dependencies.image]
+version = "0.21"
+default-features = false
+features = ["jpeg","png","bmp","ico"]

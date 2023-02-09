@@ -1,0 +1,51 @@
+#! /usr/bin/env bash
+# VERSION: 0.1.0
+
+REBUILDFLAG=0
+USERNUMBER=0
+
+USAGE()
+{
+    echo -e "\nSupply the number part of your usernamne, if less than 1000 then add 1000 to it"
+    echo -e "Or, supply -r to rebuild; ensure you have already supplied the above.\n"
+    exit 1
+}
+
+if [ $# -ne 1 ]; then
+    USAGE
+
+elif (( $1 > 999 )); then
+    USERNUMBER=$1
+    echo $USERNUMBER > setup/usernumber
+
+elif [[ $1 == '-r' ]]; then
+    
+    USERNUMBER=$(cat setup/usernumber)
+    
+    if (( ${#USERNUMBER} > 3 )); then
+        REBUILDFLAG=1
+        echo -e "\nRebuilding Rust package"
+    else
+        USAGE
+    fi
+
+else 
+    USAGE
+fi
+
+##### CHECK FOR Cargo.toml
+if [[ $(cargo verify-project --manifest-path setup/Cargo.toml | grep -o true 2> /dev/null ) != "true"  ]];then
+    
+    echo -e "\nPANIC: setup\Cargo.toml does not exist\n"
+    exit 1 
+    
+else
+    echo -e "\nBuilding Rust package..."
+    cargo install --path setup/
+fi
+
+./setup/target/release/nos_assignment $USERNUMBER
+
+bash setup/makeDir "_Directory"
+
+echo -e "\n Complete setup..\n"

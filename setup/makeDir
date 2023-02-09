@@ -1,0 +1,24 @@
+#! /usr/bin/env bash
+
+supplied_dir=$1 # the first argument supplied to the script is the directory whose contents will be moved
+
+# check if the supplied directory exists
+if [ ! -d "$supplied_dir" ]; then
+    echo "The supplied directory does not exist. Exiting."
+    exit 1
+fi
+
+cd $supplied_dir
+
+mkdir -p {dir1,dir2,dir3,dir4}/{subdir1,subdir2,subdir3,subdir4}/{subsubdir1,subsubdir2,subsubdir3,subsubdir4}
+
+for (( i=1; i<=4; i++ )); do
+    for (( j=1; j<=4; j++ )); do
+        for (( k=1; k<=4; k++ )); do
+           # move a random number of files and directories from the supplied directory into the new directory
+            for file in $( find . -maxdepth 1 -type f | shuf -n 8); do
+                mv $file "dir$i/subdir$j/subsubdir$k/"
+            done
+        done
+    done
+done
