@@ -1,0 +1,6 @@
+to add change files
+git add filename or git add .[means all files]
+
+git commit -m "your message"
+
+git push
