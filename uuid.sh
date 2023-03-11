@@ -90,13 +90,35 @@ function uuid5_textfile(){
   fi
 }
 
+function file_content() {
+   #list all files in the _Directory directory
+  files=$(ls -R _Directory/*)
+
+  #Loops through all subdirectories under _Directory
+  for subdir in $(echo "$files" | grep ":$" | sed 's/://' | sort -u); do
+    echo "$subdir"
+
+    #Find the total size used in the current subdirectory
+    size=$(du -hs "$subdir" | awk '{ print $1 }')
+    echo "Total space used: $size"
+
+    #Find the file types and their sizes in the current subdirectory
+    types=$(find "$subdir" -type f | sed 's/.*\.//' | sort | uniq -c | awk '{ print $2 }')
+    for type in $types; do
+      echo "File type: $type, Size: $size"
+    done
+  done
+}
+
 function argument() {
   if [[ "$1" == "-v4" ]]; then
     uuid4_textfile "$2"
   elif [[ "$1" == "-v5" && "$2" == "-n" && -n "$3" ]]; then
     uuid5_textfile "$3"
+  elif [[ "$1" == "-fc" ]]; then
+    file_content
   else
-    echo "Invalid arguments specified. Please use -v4 or -v5 -n [word]."
+    echo "Invalid arguments specified. Please use -v4 or -v5 -n [word], or -fc."
     return 1
   fi
 }
