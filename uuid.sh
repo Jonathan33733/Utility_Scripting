@@ -111,20 +111,20 @@ function file_content() {
 }
 
 function argument() {
-  if [[ "$1" == "-v4" ]]; then
-    uuid4_textfile "$2"
+  if [[ "$1" == "-fc" ]]; then
+    file_content
+  elif [[ "$1" == "-v4" ]]; then
+    uuid4_textfile
   elif [[ "$1" == "-v5" && "$2" == "-n" && -n "$3" ]]; then
     uuid5_textfile "$3"
-  elif [[ "$1" == "-fc" ]]; then
-    file_content
   else
-    echo "Invalid arguments specified. Please use -v4 or -v5 -n [word], or -fc."
+    echo "Invalid arguments specified. Please use -fc, -v4, or -v5 -n [word]."
     return 1
   fi
 }
 
-if [[ $# -ne 2 && $# -ne 3 ]]; then
-  echo "Usage: $0 [-v4|-v5 -n word]"
+if [[ $# -ne 1 && $# -ne 2 && $# -ne 3 ]]; then
+  echo "Usage: $0 [-v4|-v5 -n word|-fc]"
   exit 1
 fi
 
