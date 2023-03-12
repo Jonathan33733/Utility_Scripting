@@ -1,0 +1,1974 @@
+_Directory/dir1
+Total space used: 4.0M
+File type: bmp, Count: 15, Size: 4.0M
+
+File type: dat, Count: 22, Size: 4.0M
+
+File type: ico, Count: 28, Size: 4.0M
+
+File type: jpg, Count: 17, Size: 4.0M
+
+File type: png, Count: 26, Size: 4.0M
+
+File type: txt, Count: 20, Size: 4.0M
+
+Shortest file name: ziyA.ico
+Longest file name: 7oJWgxGPqE9JmoOtVvnelaCnOg4EGOanLxruhn8Oa19AtakfZXhFLm8derMPbxQC6NMdK7LsH85VY1h2jGUbcIbYB8OxF7wUcCLrQuLwlXjBGVgeKJNrKYtQ5dYZWoU.jpg
+
+
+_Directory/dir1/subdir1
+Most recently modified txt file: _Directory/dir1/subdir1/subsubdir4/JrqYATSDLXxreTC6EmlndqPQGPbLPVnzV.txt
+  File: _Directory/dir1/subdir1/subsubdir4/JrqYATSDLXxreTC6EmlndqPQGPbLPVnzV.txt
+  Size: 38        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 574625356   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.588687499 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 848K
+File type: bmp, Count: 3, Size: 848K
+
+File type: dat, Count: 6, Size: 848K
+
+File type: ico, Count: 7, Size: 848K
+
+File type: jpg, Count: 5, Size: 848K
+
+File type: png, Count: 5, Size: 848K
+
+File type: txt, Count: 6, Size: 848K
+
+Shortest file name: ziyA.ico
+Longest file name: Q93pRSqYKR04Q5ovC4fz7cpQt11KXPcn28ZqG8ytJw0l9KyiJq1kr20UgMwydbN2VuEUdaBhdod60Dxwau6bsRcNnZcaGGKQf5YiOgXx3sLYzdPOOZGn4Xh.png
+
+
+_Directory/dir1/subdir1/subsubdir1
+Most recently modified txt file: _Directory/dir1/subdir1/subsubdir1/rjkx4MufpGC1i3Fl1TsksPablLdLx.txt
+  File: _Directory/dir1/subdir1/subsubdir1/rjkx4MufpGC1i3Fl1TsksPablLdLx.txt
+  Size: 107       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 534775265   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.588687499 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 236K
+File type: dat, Count: 1, Size: 236K
+
+File type: ico, Count: 1, Size: 236K
+
+File type: jpg, Count: 1, Size: 236K
+
+File type: png, Count: 2, Size: 236K
+
+File type: txt, Count: 3, Size: 236K
+
+Shortest file name: NLdq9IiELJpKzSFeGJRg.png
+Longest file name: hDpp00oP3FrxZGBM83ZVqIHOrtXs1OWlQH3PC6Af5SYaiI4g18mku7Fw1DqlvGFxHSe2ryDI4JQM5xQgxdbaXPbH2SwJUsSUrEnS9hfnZCX9txi9VbHIrs9.ico
+
+
+_Directory/dir1/subdir1/subsubdir2
+Most recently modified txt file: _Directory/dir1/subdir1/subsubdir2/jClDnXmwjd1TY94.txt
+  File: _Directory/dir1/subdir1/subsubdir2/jClDnXmwjd1TY94.txt
+  Size: 125       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 570428992   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.588687499 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 172K
+File type: bmp, Count: 2, Size: 172K
+
+File type: dat, Count: 1, Size: 172K
+
+File type: ico, Count: 1, Size: 172K
+
+File type: jpg, Count: 1, Size: 172K
+
+File type: png, Count: 1, Size: 172K
+
+File type: txt, Count: 2, Size: 172K
+
+Shortest file name: WIthhY.dat
+Longest file name: u25huCgk3SM7n4ZIkYxtSCA03LxXssWPjpuwNbS4mN4or67TqlCCVbrYqzO9YpSoZAluIizaqPwikOvfvkIFmIZ8h8VNZWgGSrmS2S3.jpg
+
+
+_Directory/dir1/subdir1/subsubdir3
+Total space used: 216K
+File type: bmp, Count: 1, Size: 216K
+
+File type: dat, Count: 3, Size: 216K
+
+File type: ico, Count: 1, Size: 216K
+
+File type: jpg, Count: 2, Size: 216K
+
+File type: png, Count: 1, Size: 216K
+
+Shortest file name: Nhvh7WbmrY2tn8M5kpQ.jpg
+Longest file name: Q93pRSqYKR04Q5ovC4fz7cpQt11KXPcn28ZqG8ytJw0l9KyiJq1kr20UgMwydbN2VuEUdaBhdod60Dxwau6bsRcNnZcaGGKQf5YiOgXx3sLYzdPOOZGn4Xh.png
+
+
+_Directory/dir1/subdir1/subsubdir4
+Most recently modified png file: _Directory/dir1/subdir1/subsubdir4/PYF0OrNuueRFiJVtHt1YFwpEoFnLM04LOoQmRnE3gWEOaqFwI2YfAIi8aRus24i7eBDowd1PmL55MlaEEgg9BmOV9jyrpdMq5XCYCopTnhPPHArk.png
+  File: _Directory/dir1/subdir1/subsubdir4/PYF0OrNuueRFiJVtHt1YFwpEoFnLM04LOoQmRnE3gWEOaqFwI2YfAIi8aRus24i7eBDowd1PmL55MlaEEgg9BmOV9jyrpdMq5XCYCopTnhPPHArk.png
+  Size: 109148    	Blocks: 216        IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 574625358   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.588687499 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 224K
+File type: dat, Count: 1, Size: 224K
+
+File type: ico, Count: 4, Size: 224K
+
+File type: jpg, Count: 1, Size: 224K
+
+File type: png, Count: 1, Size: 224K
+
+File type: txt, Count: 1, Size: 224K
+
+Shortest file name: ziyA.ico
+Longest file name: PYF0OrNuueRFiJVtHt1YFwpEoFnLM04LOoQmRnE3gWEOaqFwI2YfAIi8aRus24i7eBDowd1PmL55MlaEEgg9BmOV9jyrpdMq5XCYCopTnhPPHArk.png
+
+
+_Directory/dir1/subdir2
+Most recently modified txt file: _Directory/dir1/subdir2/subsubdir4/GTeZYsDq1nHqrJcIUKpY.txt
+  File: _Directory/dir1/subdir2/subsubdir4/GTeZYsDq1nHqrJcIUKpY.txt
+  Size: 247       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 585116620   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.592687495 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 684K
+File type: bmp, Count: 6, Size: 684K
+
+File type: dat, Count: 7, Size: 684K
+
+File type: ico, Count: 3, Size: 684K
+
+File type: jpg, Count: 4, Size: 684K
+
+File type: png, Count: 7, Size: 684K
+
+File type: txt, Count: 5, Size: 684K
+
+Shortest file name: 6eZXvSAY.png
+Longest file name: wAhAx4hc6lkadE7SPgkZWeMgBOlNos0CS1iDdtLvZG5aN6GiC0hd7BLJ2okZeZC1BIzwVdynO4ZwmZfLXPO7mZXGEk0PggfuU5f9az0SdT6lHimse7tAtXPzIHtWbH.bmp
+
+
+_Directory/dir1/subdir2/subsubdir1
+Most recently modified txt file: _Directory/dir1/subdir2/subsubdir1/C4jmqXhyhrcic7h3KgYSC5rmYlf7GNuVQX.txt
+  File: _Directory/dir1/subdir2/subsubdir1/C4jmqXhyhrcic7h3KgYSC5rmYlf7GNuVQX.txt
+  Size: 219       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 578816471   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.588687499 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 92K
+File type: bmp, Count: 2, Size: 92K
+
+File type: dat, Count: 2, Size: 92K
+
+File type: jpg, Count: 1, Size: 92K
+
+File type: png, Count: 2, Size: 92K
+
+File type: txt, Count: 1, Size: 92K
+
+Shortest file name: 6eZXvSAY.png
+Longest file name: KqRxVp98dh9GHeRcw9G8k9v2BdtSI9l9ek0SpuGLQDMRfzbbHbYuZSyGczAAO1aP5PR8Vq3YH48ZJhzFPtVQ9rAY1VsDe0ndxDDRXD5FqcmqCt5ZQQocqr.png
+
+
+_Directory/dir1/subdir2/subsubdir2
+Most recently modified txt file: _Directory/dir1/subdir2/subsubdir2/wJea1wV5EwkHfpp6IxhODuKeRKYMMEPstFDFfMgAJed2GW3wagERuk3SonrAweYUx5RVbVU3juGPkX2tZZxP1pj.txt
+  File: _Directory/dir1/subdir2/subsubdir2/wJea1wV5EwkHfpp6IxhODuKeRKYMMEPstFDFfMgAJed2GW3wagERuk3SonrAweYUx5RVbVU3juGPkX2tZZxP1pj.txt
+  Size: 162       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 580917831   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.592687495 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 228K
+File type: bmp, Count: 1, Size: 228K
+
+File type: dat, Count: 2, Size: 228K
+
+File type: ico, Count: 2, Size: 228K
+
+File type: jpg, Count: 1, Size: 228K
+
+File type: png, Count: 1, Size: 228K
+
+File type: txt, Count: 1, Size: 228K
+
+Shortest file name: s4MRoYIKokGhQqpZUjWsO.dat
+Longest file name: 9ZAXDDanjr1YYMlvbKxaow81ABx6mwLeAulCjHOb8cI9wHLjzGit53Bii8Lz0FRknymrXZBWozK4jv4TI2S5zbx8OIcP3uF41fnH00KWyEf.ico
+
+
+_Directory/dir1/subdir2/subsubdir3
+Most recently modified txt file: _Directory/dir1/subdir2/subsubdir3/fkd6tbTSilqUOzDuKAL329rfe6T888TG00w9Ud0xv2vXoVSH1o63WFXAkSlfpddTrtmUOZLM9j2Y6.txt
+  File: _Directory/dir1/subdir2/subsubdir3/fkd6tbTSilqUOzDuKAL329rfe6T888TG00w9Ud0xv2vXoVSH1o63WFXAkSlfpddTrtmUOZLM9j2Y6.txt
+  Size: 93        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 583012370   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.592687495 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 244K
+File type: bmp, Count: 2, Size: 244K
+
+File type: dat, Count: 1, Size: 244K
+
+File type: jpg, Count: 1, Size: 244K
+
+File type: png, Count: 3, Size: 244K
+
+File type: txt, Count: 1, Size: 244K
+
+Shortest file name: 73G9BxTj0JYEH.jpg
+Longest file name: wAhAx4hc6lkadE7SPgkZWeMgBOlNos0CS1iDdtLvZG5aN6GiC0hd7BLJ2okZeZC1BIzwVdynO4ZwmZfLXPO7mZXGEk0PggfuU5f9az0SdT6lHimse7tAtXPzIHtWbH.bmp
+
+
+_Directory/dir1/subdir2/subsubdir4
+Most recently modified txt file: _Directory/dir1/subdir2/subsubdir4/GTeZYsDq1nHqrJcIUKpY.txt
+  File: _Directory/dir1/subdir2/subsubdir4/GTeZYsDq1nHqrJcIUKpY.txt
+  Size: 247       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 585116620   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.592687495 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 120K
+File type: bmp, Count: 1, Size: 120K
+
+File type: dat, Count: 2, Size: 120K
+
+File type: ico, Count: 1, Size: 120K
+
+File type: jpg, Count: 1, Size: 120K
+
+File type: png, Count: 1, Size: 120K
+
+File type: txt, Count: 2, Size: 120K
+
+Shortest file name: lzZYVh14IlBfnBdks.ico
+Longest file name: HrN6DSQHLtSLiWFWanN4rTTUYkH6z25OHdWCN3ojsUKycFi0tIwZI6n3YOI29g9AMmljl4B2F9rYCMroOK2M7T419RRw9ptk23YuvOlzmaGXdypFsq7CGcmAtSY.bmp
+
+
+_Directory/dir1/subdir3
+Most recently modified txt file: _Directory/dir1/subdir3/subsubdir4/6hu4GF5C0x.txt
+  File: _Directory/dir1/subdir3/subsubdir4/6hu4GF5C0x.txt
+  Size: 229       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 595594118   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.592687495 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 1.1M
+File type: bmp, Count: 1, Size: 1.1M
+
+File type: dat, Count: 4, Size: 1.1M
+
+File type: ico, Count: 8, Size: 1.1M
+
+File type: jpg, Count: 7, Size: 1.1M
+
+File type: png, Count: 8, Size: 1.1M
+
+File type: txt, Count: 4, Size: 1.1M
+
+Shortest file name: RNHFRM651.dat
+Longest file name: 7oJWgxGPqE9JmoOtVvnelaCnOg4EGOanLxruhn8Oa19AtakfZXhFLm8derMPbxQC6NMdK7LsH85VY1h2jGUbcIbYB8OxF7wUcCLrQuLwlXjBGVgeKJNrKYtQ5dYZWoU.jpg
+
+
+_Directory/dir1/subdir3/subsubdir1
+Total space used: 252K
+File type: bmp, Count: 1, Size: 252K
+
+File type: ico, Count: 3, Size: 252K
+
+File type: jpg, Count: 2, Size: 252K
+
+File type: png, Count: 2, Size: 252K
+
+Shortest file name: b8gwpzJ33m8sCwvIg7IWZ4Cec5e3AW7.ico
+Longest file name: hSpwQWt2jQYL6b24TaVca3hVjbms8Z1DDAtw2WzAU7tqQ27m87qtwe16cLNMIZC0IMhgpscik7iMDsNKvUh8d7fjLoNrMSpCMvFy3Fcrzm42YeyZ5T.png
+
+
+_Directory/dir1/subdir3/subsubdir2
+Most recently modified png file: _Directory/dir1/subdir3/subsubdir2/gbHVEiTfLQOJVTfbqYZpVyyaUrz7korkcoKnmLK1EOrYcq7RwlVi0FxsPgyJ2aV2OeStGUn.png
+  File: _Directory/dir1/subdir3/subsubdir2/gbHVEiTfLQOJVTfbqYZpVyyaUrz7korkcoKnmLK1EOrYcq7RwlVi0FxsPgyJ2aV2OeStGUn.png
+  Size: 122296    	Blocks: 240        IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 591403460   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.592687495 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 272K
+File type: dat, Count: 3, Size: 272K
+
+File type: jpg, Count: 3, Size: 272K
+
+File type: png, Count: 1, Size: 272K
+
+File type: txt, Count: 1, Size: 272K
+
+Shortest file name: RNHFRM651.dat
+Longest file name: 0VkTg8yeitZ1lxbscpXzZdxtHowSFF2Axk20HIW1tAwenW7rGLSJP3pycNXryOfWPNfKXn4IiJrDGxU8E7SHbPc3iM1GZo5FWbwYm7pj0XQas.jpg
+
+
+_Directory/dir1/subdir3/subsubdir3
+Most recently modified txt file: _Directory/dir1/subdir3/subsubdir3/CZGGkdIVon.txt
+  File: _Directory/dir1/subdir3/subsubdir3/CZGGkdIVon.txt
+  Size: 214       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 593494175   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.592687495 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 132K
+File type: dat, Count: 1, Size: 132K
+
+File type: ico, Count: 2, Size: 132K
+
+File type: jpg, Count: 1, Size: 132K
+
+File type: png, Count: 2, Size: 132K
+
+File type: txt, Count: 2, Size: 132K
+
+Shortest file name: CZGGkdIVon.txt
+Longest file name: TDrY0O3C8H52EkfkgCZFSUCL9gFBWg462iFSvja8SvYk3oVZGqpIwN35HFaKdOgsfxGoEDAlUTgICkdVbpsnoi8GT5nAA8lIF7NyltratFge53iFha7ez0Dfy.png
+
+
+_Directory/dir1/subdir3/subsubdir4
+Most recently modified txt file: _Directory/dir1/subdir3/subsubdir4/6hu4GF5C0x.txt
+  File: _Directory/dir1/subdir3/subsubdir4/6hu4GF5C0x.txt
+  Size: 229       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 595594118   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.592687495 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 396K
+File type: ico, Count: 3, Size: 396K
+
+File type: jpg, Count: 1, Size: 396K
+
+File type: png, Count: 3, Size: 396K
+
+File type: txt, Count: 1, Size: 396K
+
+Shortest file name: 6hu4GF5C0x.txt
+Longest file name: 7oJWgxGPqE9JmoOtVvnelaCnOg4EGOanLxruhn8Oa19AtakfZXhFLm8derMPbxQC6NMdK7LsH85VY1h2jGUbcIbYB8OxF7wUcCLrQuLwlXjBGVgeKJNrKYtQ5dYZWoU.jpg
+
+
+_Directory/dir1/subdir4
+Most recently modified txt file: _Directory/dir1/subdir4/subsubdir4/B7yM34dTwqGApyVjPgvAfk5Z33QxfUcuGB1yEgk57in15zE.txt
+  File: _Directory/dir1/subdir4/subsubdir4/B7yM34dTwqGApyVjPgvAfk5Z33QxfUcuGB1yEgk57in15zE.txt
+  Size: 180       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 606087096   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.596687492 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 1.4M
+File type: bmp, Count: 5, Size: 1.4M
+
+File type: dat, Count: 5, Size: 1.4M
+
+File type: ico, Count: 10, Size: 1.4M
+
+File type: jpg, Count: 1, Size: 1.4M
+
+File type: png, Count: 6, Size: 1.4M
+
+File type: txt, Count: 5, Size: 1.4M
+
+Shortest file name: B7us4aBU.png
+Longest file name: EQviIddF7WHuy7kviAJjXgeew8krldqcVpr7ZzrZN54urYJ3qPcyz1P1f9uCGPI1GAGTGujRDLTNb6G4smeybcU0749bQsM2tM6nbhUfMGilRgXRi5wJLqm5KDFe1.bmp
+
+
+_Directory/dir1/subdir4/subsubdir1
+Most recently modified txt file: _Directory/dir1/subdir4/subsubdir1/yFTORppaynxbaNnv1IOzh4wpHds5AJ6jZaOCRJLhQC25aS6CpERimFs0PJPPgg5VbMZ2pEIQDNCDUY3Yc.txt
+  File: _Directory/dir1/subdir4/subsubdir1/yFTORppaynxbaNnv1IOzh4wpHds5AJ6jZaOCRJLhQC25aS6CpERimFs0PJPPgg5VbMZ2pEIQDNCDUY3Yc.txt
+  Size: 164       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 599789862   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.596687492 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 268K
+File type: bmp, Count: 2, Size: 268K
+
+File type: dat, Count: 1, Size: 268K
+
+File type: ico, Count: 2, Size: 268K
+
+File type: png, Count: 1, Size: 268K
+
+File type: txt, Count: 2, Size: 268K
+
+Shortest file name: jnImVxbs2brL4Z8YYJ6ISk3qnb6.ico
+Longest file name: IFM8e1eVvbqSBTBfdbxep5Y1SDVxhpiXaturuw1wdeICaHFWAtCGE8xIybeuSEwSKAL4pcI5nkBfAy9rIA8T3q2vfhnECun7zh2of0sgxusFybo.ico
+
+
+_Directory/dir1/subdir4/subsubdir2
+Most recently modified txt file: _Directory/dir1/subdir4/subsubdir2/oC46iB5s4DU5I5RQiGhC461h8HhCHo9lM6PCcHo7s2wkGYg8qaMdYsCEfsMKPZIqYWMqemvVOPrtJ0RC5GlplcdvNjaQWa8k8IUatKIym5TTsyCvhPq.txt
+  File: _Directory/dir1/subdir4/subsubdir2/oC46iB5s4DU5I5RQiGhC461h8HhCHo9lM6PCcHo7s2wkGYg8qaMdYsCEfsMKPZIqYWMqemvVOPrtJ0RC5GlplcdvNjaQWa8k8IUatKIym5TTsyCvhPq.txt
+  Size: 53        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 601896898   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.596687492 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 452K
+File type: bmp, Count: 3, Size: 452K
+
+File type: ico, Count: 1, Size: 452K
+
+File type: png, Count: 2, Size: 452K
+
+File type: txt, Count: 2, Size: 452K
+
+Shortest file name: mp3JFATxrHMOGXPhbwY4PJfNewMwa4IyzQh.png
+Longest file name: EQviIddF7WHuy7kviAJjXgeew8krldqcVpr7ZzrZN54urYJ3qPcyz1P1f9uCGPI1GAGTGujRDLTNb6G4smeybcU0749bQsM2tM6nbhUfMGilRgXRi5wJLqm5KDFe1.bmp
+
+
+_Directory/dir1/subdir4/subsubdir3
+Total space used: 236K
+File type: dat, Count: 4, Size: 236K
+
+File type: ico, Count: 4, Size: 236K
+
+Shortest file name: zVlHXUi2KNE66AlP0xtCYYGuwez8QI.ico
+Longest file name: Oe0hP3XvkpAyDvzJ3qN8dosT78Yv2LUHdDQNTmFJfy5lHdohLADsvdXZ16qPpKeWfIM64quU1GEyIuJdfiySiccVRiej4Pwl1OIbHHnFVkerbEGtj5uo.dat
+
+
+_Directory/dir1/subdir4/subsubdir4
+Most recently modified ico file: _Directory/dir1/subdir4/subsubdir4/PO07XoT00leem6Zf0l2eojJeW3H7g4c32Ti7vmj395PtjKE6MA6afDvV4sfXDLnPgT.ico
+  File: _Directory/dir1/subdir4/subsubdir4/PO07XoT00leem6Zf0l2eojJeW3H7g4c32Ti7vmj395PtjKE6MA6afDvV4sfXDLnPgT.ico
+  Size: 55903     	Blocks: 112        IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 606087098   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.596687492 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 476K
+File type: ico, Count: 3, Size: 476K
+
+File type: jpg, Count: 1, Size: 476K
+
+File type: png, Count: 3, Size: 476K
+
+File type: txt, Count: 1, Size: 476K
+
+Shortest file name: B7us4aBU.png
+Longest file name: PO07XoT00leem6Zf0l2eojJeW3H7g4c32Ti7vmj395PtjKE6MA6afDvV4sfXDLnPgT.ico
+
+
+_Directory/dir2
+Most recently modified txt file: _Directory/dir2/subdir4/subsubdir2/ZRYXj7NbzFSefUOymw2ZoIkrPiHTHafpxXnribJjQ22aleE0YXmYi.txt
+  File: _Directory/dir2/subdir4/subsubdir2/ZRYXj7NbzFSefUOymw2ZoIkrPiHTHafpxXnribJjQ22aleE0YXmYi.txt
+  Size: 90        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 648022519   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.612687478 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 3.0M
+File type: bmp, Count: 17, Size: 3.0M
+
+File type: dat, Count: 29, Size: 3.0M
+
+File type: ico, Count: 21, Size: 3.0M
+
+File type: jpg, Count: 26, Size: 3.0M
+
+File type: png, Count: 17, Size: 3.0M
+
+File type: txt, Count: 18, Size: 3.0M
+
+Shortest file name: GzuC.ico
+Longest file name: cZG5BQE67DlDALi7qFgfJQVvS0Nf9iik2izrQ83SYnBOF37H9aY424ElInJDNelpxzH3bOtoixznQ7LeyczG859JBLD4YMvv8fYb8oMC1WdKInXaz1pGKIVz5K8yKRx.jpg
+
+
+_Directory/dir2/subdir1
+Most recently modified txt file: _Directory/dir2/subdir1/subsubdir4/rFCkbLWv6hl.txt
+  File: _Directory/dir2/subdir1/subsubdir4/rFCkbLWv6hl.txt
+  Size: 20        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 618660234   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.600687488 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 776K
+File type: bmp, Count: 3, Size: 776K
+
+File type: dat, Count: 8, Size: 776K
+
+File type: ico, Count: 6, Size: 776K
+
+File type: jpg, Count: 3, Size: 776K
+
+File type: png, Count: 6, Size: 776K
+
+File type: txt, Count: 6, Size: 776K
+
+Shortest file name: rFCkbLWv6hl.txt
+Longest file name: qgB5ym2OvEPZVXAMWT8zCmUWp256MFKgvrimk7JwkFUJ6dNR4QzNELNN8LvMi4n3Y1bGlaOMYGXp47qx3dOnxYdPhZbRiRL4IeZzOt3zSuNYPML0uAXgRJVHyvZuJF.txt
+
+
+_Directory/dir2/subdir1/subsubdir1
+Most recently modified txt file: _Directory/dir2/subdir1/subsubdir1/emlTeUz6D65IM5TXZPwWIJZvcHFoPtx.txt
+  File: _Directory/dir2/subdir1/subsubdir1/emlTeUz6D65IM5TXZPwWIJZvcHFoPtx.txt
+  Size: 11        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 612369295   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.596687492 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 200K
+File type: bmp, Count: 1, Size: 200K
+
+File type: dat, Count: 2, Size: 200K
+
+File type: ico, Count: 1, Size: 200K
+
+File type: jpg, Count: 2, Size: 200K
+
+File type: txt, Count: 2, Size: 200K
+
+Shortest file name: emlTeUz6D65IM5TXZPwWIJZvcHFoPtx.txt
+Longest file name: nLNREuBDyK1yGezYzvTGzn0xFtGzto1i0FlCAny02RVRZzRud8hYdlTjjCRlY3wWBYR3YIulPpdyGySM30QAOq9maIzWqhKmwGv8KESLIXT0h6EJIJVoNCFOAsp.bmp
+
+
+_Directory/dir2/subdir1/subsubdir2
+Most recently modified txt file: _Directory/dir2/subdir1/subsubdir2/16DGnHB1L1nAplc41lLp0JO3rDFT3lU4v6OvuoxZUv4DXSZ.txt
+  File: _Directory/dir2/subdir1/subsubdir2/16DGnHB1L1nAplc41lLp0JO3rDFT3lU4v6OvuoxZUv4DXSZ.txt
+  Size: 87        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 614467852   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.596687492 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 228K
+File type: dat, Count: 2, Size: 228K
+
+File type: ico, Count: 2, Size: 228K
+
+File type: jpg, Count: 1, Size: 228K
+
+File type: png, Count: 2, Size: 228K
+
+File type: txt, Count: 1, Size: 228K
+
+Shortest file name: FMbyb7z5Wt7CaVKMMVFuiPMefuN8P7LZ.png
+Longest file name: rbnaTPOFEQC3qokpbBVlnFmUpvMX6DJulpSn2GEGlNlXzqzGIAQTH9uOmFBq9tnWzYJ8QRSTYqwYFv1EXLh1ubnqBQk9lNukOByrZ6nucyOW67KuYYM584VVVb6lA.dat
+
+
+_Directory/dir2/subdir1/subsubdir3
+Total space used: 296K
+File type: bmp, Count: 2, Size: 296K
+
+File type: dat, Count: 1, Size: 296K
+
+File type: ico, Count: 3, Size: 296K
+
+File type: png, Count: 2, Size: 296K
+
+Shortest file name: GAICSSLAk9jO2y8d.ico
+Longest file name: omcaT50YrI3Fi4apnpy9MS3kAS2W5Qe1vZTo9eAaasAlGALC8jBbM75Pmnd4QvKvDE4pMKFxFTx4qg6eDFGj411bdoOSMdwTXdrCnQiM1nhS8po48R.png
+
+
+_Directory/dir2/subdir1/subsubdir4
+Most recently modified png file: _Directory/dir2/subdir1/subsubdir4/SAD6Uq7hS80okKYoAp3ybyvk6d5aY2eQXa5PCDqpHByCtR4wdlRuCNGO4TvmoDtA.png
+  File: _Directory/dir2/subdir1/subsubdir4/SAD6Uq7hS80okKYoAp3ybyvk6d5aY2eQXa5PCDqpHByCtR4wdlRuCNGO4TvmoDtA.png
+  Size: 9661      	Blocks: 24         IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 618673113   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.600687488 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 52K
+File type: dat, Count: 3, Size: 52K
+
+File type: png, Count: 2, Size: 52K
+
+File type: txt, Count: 3, Size: 52K
+
+Shortest file name: rFCkbLWv6hl.txt
+Longest file name: qgB5ym2OvEPZVXAMWT8zCmUWp256MFKgvrimk7JwkFUJ6dNR4QzNELNN8LvMi4n3Y1bGlaOMYGXp47qx3dOnxYdPhZbRiRL4IeZzOt3zSuNYPML0uAXgRJVHyvZuJF.txt
+
+
+_Directory/dir2/subdir2
+Most recently modified txt file: _Directory/dir2/subdir2/subsubdir3/G73kAWjKCkOA92cOXvFK3D9ihMSKnmbt6D7Rbjna97a4ndt1qDv1xm8X4tiz5IYQsGFjC5KUYFbiwc9TVP82nrTW.txt
+  File: _Directory/dir2/subdir2/subsubdir3/G73kAWjKCkOA92cOXvFK3D9ihMSKnmbt6D7Rbjna97a4ndt1qDv1xm8X4tiz5IYQsGFjC5KUYFbiwc9TVP82nrTW.txt
+  Size: 238       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 629148299   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.608687481 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 872K
+File type: bmp, Count: 5, Size: 872K
+
+File type: dat, Count: 9, Size: 872K
+
+File type: ico, Count: 6, Size: 872K
+
+File type: jpg, Count: 5, Size: 872K
+
+File type: png, Count: 5, Size: 872K
+
+File type: txt, Count: 2, Size: 872K
+
+Shortest file name: GzuC.ico
+Longest file name: CSvfuKzAi9VEDsWXcDXcQcZyHVnGD5LpmQHXIzkkLtm33MramFlEK7IktqUUYYHhATpw8WYMdYcjSChxK5EBv6cVLNqgsNZixHfAMtnMyZeyg9WLtw4wCr9Vvcvo.png
+
+
+_Directory/dir2/subdir2/subsubdir1
+Total space used: 228K
+File type: bmp, Count: 1, Size: 228K
+
+File type: dat, Count: 4, Size: 228K
+
+File type: ico, Count: 2, Size: 228K
+
+File type: jpg, Count: 1, Size: 228K
+
+Shortest file name: zHXIiyQmqP.dat
+Longest file name: pqZgyqaVSKFLDwyG986A9RR8sZ7WsvzA9OyxLXLCdYoUr29PShYI1mFpjza5apJuYulYKxIgGVxMC9xGIH9hZCdQyyKyFB09QHdUXddl.jpg
+
+
+_Directory/dir2/subdir2/subsubdir2
+Total space used: 292K
+File type: bmp, Count: 3, Size: 292K
+
+File type: dat, Count: 2, Size: 292K
+
+File type: ico, Count: 1, Size: 292K
+
+File type: png, Count: 1, Size: 292K
+
+File type: txt, Count: 1, Size: 292K
+
+Shortest file name: Bbhp1PsDSWgLEO8cRPhYlFqEgAteA7HB.ico
+Longest file name: CSvfuKzAi9VEDsWXcDXcQcZyHVnGD5LpmQHXIzkkLtm33MramFlEK7IktqUUYYHhATpw8WYMdYcjSChxK5EBv6cVLNqgsNZixHfAMtnMyZeyg9WLtw4wCr9Vvcvo.png
+
+
+_Directory/dir2/subdir2/subsubdir3
+Most recently modified txt file: _Directory/dir2/subdir2/subsubdir3/G73kAWjKCkOA92cOXvFK3D9ihMSKnmbt6D7Rbjna97a4ndt1qDv1xm8X4tiz5IYQsGFjC5KUYFbiwc9TVP82nrTW.txt
+  File: _Directory/dir2/subdir2/subsubdir3/G73kAWjKCkOA92cOXvFK3D9ihMSKnmbt6D7Rbjna97a4ndt1qDv1xm8X4tiz5IYQsGFjC5KUYFbiwc9TVP82nrTW.txt
+  Size: 238       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 629148299   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.608687481 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.916687214 +0000
+ Birth: -
+
+Total space used: 204K
+File type: dat, Count: 1, Size: 204K
+
+File type: ico, Count: 1, Size: 204K
+
+File type: jpg, Count: 2, Size: 204K
+
+File type: png, Count: 3, Size: 204K
+
+File type: txt, Count: 1, Size: 204K
+
+Shortest file name: iL8bJlTDnzyDAx6X.ico
+Longest file name: sfulEFZsr2IqkhfZQE5WzHjVThSkgMN0qp1gNpr1Cg6V0qPhgCYqoqOT7a1udi4esTJh5BFKgt5msGIJ4giX0I9p11Y8vk7QNd2wbOPy3DWDwzjbYpJl.png
+
+
+_Directory/dir2/subdir2/subsubdir4
+Total space used: 148K
+File type: bmp, Count: 1, Size: 148K
+
+File type: dat, Count: 2, Size: 148K
+
+File type: ico, Count: 2, Size: 148K
+
+File type: jpg, Count: 2, Size: 148K
+
+File type: png, Count: 1, Size: 148K
+
+Shortest file name: GzuC.ico
+Longest file name: gaQ8NQijNtO7gfRad6sOlzhqoIdHv80bS8dSF7c5kyiAGaM9drpE3cZNBMznLg2Bzx4O4gHS2yE0H2L6hLSvOgS.dat
+
+
+_Directory/dir2/subdir3
+Most recently modified png file: _Directory/dir2/subdir3/subsubdir3/iQ7Ne3LYwFIoXgH.png
+  File: _Directory/dir2/subdir3/subsubdir3/iQ7Ne3LYwFIoXgH.png
+  Size: 113603    	Blocks: 224        IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 639654429   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.608687481 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 632K
+File type: bmp, Count: 2, Size: 632K
+
+File type: dat, Count: 8, Size: 632K
+
+File type: ico, Count: 4, Size: 632K
+
+File type: jpg, Count: 10, Size: 632K
+
+File type: png, Count: 2, Size: 632K
+
+File type: txt, Count: 6, Size: 632K
+
+Shortest file name: kL2om.jpg
+Longest file name: qpsOv1Ow23pVLpp0MPYKrmv1zPjCNpwkXTqx9Y72MZo068XaUUVna09lDoT4BHyXtOIayD9isD2ELFRsdt71SDEMQaP83NKz2Bd39q76nx7Dqj7ejM2xbItSmn.jpg
+
+
+_Directory/dir2/subdir3/subsubdir1
+Most recently modified txt file: _Directory/dir2/subdir3/subsubdir1/L0b91qilttKfoNhkBXnGOYMGAstVUll11Ke4eunLREJJOPxU5icGQfdUeXW0K6xBHb0WxGDudY044Qaw7zyWFZIhSa6z8RPcGqf0vqyCP.txt
+  File: _Directory/dir2/subdir3/subsubdir1/L0b91qilttKfoNhkBXnGOYMGAstVUll11Ke4eunLREJJOPxU5icGQfdUeXW0K6xBHb0WxGDudY044Qaw7zyWFZIhSa6z8RPcGqf0vqyCP.txt
+  Size: 246       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 635439691   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.608687481 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 72K
+File type: bmp, Count: 1, Size: 72K
+
+File type: dat, Count: 2, Size: 72K
+
+File type: jpg, Count: 1, Size: 72K
+
+File type: png, Count: 1, Size: 72K
+
+File type: txt, Count: 3, Size: 72K
+
+Shortest file name: EtqMo4pQXuSFAQfsibZJ3PIaWdJouEWZ6UzJyjo.png
+Longest file name: hABNjdstX1c9bHEjMMGNyu2HKpjg8GLkRTSBu8BpapzobyVkAN2QYycYh2LRLjJrpQ5YLLwrrz6fNg7N22CG0ED5qVfo9aAbdwqI09a5cia8luTQeE8Hd.txt
+
+
+_Directory/dir2/subdir3/subsubdir2
+Most recently modified txt file: _Directory/dir2/subdir3/subsubdir2/bLAado22b1gzk1MND8a3g2iaynvJDsHlP6UFIaciS38utRMUyXZb77Q7XY9EURL6llDjDiJrDWv0qxRnCJChYFm.txt
+  File: _Directory/dir2/subdir3/subsubdir2/bLAado22b1gzk1MND8a3g2iaynvJDsHlP6UFIaciS38utRMUyXZb77Q7XY9EURL6llDjDiJrDWv0qxRnCJChYFm.txt
+  Size: 119       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 637546843   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.608687481 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 144K
+File type: dat, Count: 1, Size: 144K
+
+File type: jpg, Count: 6, Size: 144K
+
+File type: txt, Count: 1, Size: 144K
+
+Shortest file name: kL2om.jpg
+Longest file name: qpsOv1Ow23pVLpp0MPYKrmv1zPjCNpwkXTqx9Y72MZo068XaUUVna09lDoT4BHyXtOIayD9isD2ELFRsdt71SDEMQaP83NKz2Bd39q76nx7Dqj7ejM2xbItSmn.jpg
+
+
+_Directory/dir2/subdir3/subsubdir3
+Most recently modified txt file: _Directory/dir2/subdir3/subsubdir3/lI2GQqJNd6czxtj30RBVObTS0ao3k6t6ae493qRvgWY6JsR8Qa9BK68YDVfEW00NgGgQGa05Nf0o41PsdEjK2CRA4owqKah.txt
+  File: _Directory/dir2/subdir3/subsubdir3/lI2GQqJNd6czxtj30RBVObTS0ao3k6t6ae493qRvgWY6JsR8Qa9BK68YDVfEW00NgGgQGa05Nf0o41PsdEjK2CRA4owqKah.txt
+  Size: 29        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 639645889   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.608687481 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 344K
+File type: bmp, Count: 1, Size: 344K
+
+File type: dat, Count: 3, Size: 344K
+
+File type: ico, Count: 2, Size: 344K
+
+File type: png, Count: 1, Size: 344K
+
+File type: txt, Count: 1, Size: 344K
+
+Shortest file name: iQ7Ne3LYwFIoXgH.png
+Longest file name: Yi7LOjZBG1Y248yyk2yGjKiBORvvlDqMoofjjSY4gRbqsB2m89CMbd9g55a0wqPceQtkE4SSfkGAa7DLTgP5PnM6LgcaSVDYwE0zDOWXY19LoNzH.dat
+
+
+_Directory/dir2/subdir3/subsubdir4
+Most recently modified txt file: _Directory/dir2/subdir3/subsubdir4/TkkGG1RdW6MhRZUjx1HHclK4M2MrTLKj1VeInq8ABR84yjlFx.txt
+  File: _Directory/dir2/subdir3/subsubdir4/TkkGG1RdW6MhRZUjx1HHclK4M2MrTLKj1VeInq8ABR84yjlFx.txt
+  Size: 57        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 641761626   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.608687481 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 72K
+File type: dat, Count: 2, Size: 72K
+
+File type: ico, Count: 2, Size: 72K
+
+File type: jpg, Count: 3, Size: 72K
+
+File type: txt, Count: 1, Size: 72K
+
+Shortest file name: psCtWiJU9v.dat
+Longest file name: B8OBYmtqQTFHVWjk3cIMZibDkgcsXfP22kEa4KF9nCrvr01smk0KNWYRgXyaMVLUBY8j2ST9DngJz22hGhxuqNGId4Qisw8GzG3PIZCcLHAYjuzQs.jpg
+
+
+_Directory/dir2/subdir4
+Most recently modified txt file: _Directory/dir2/subdir4/subsubdir2/ZRYXj7NbzFSefUOymw2ZoIkrPiHTHafpxXnribJjQ22aleE0YXmYi.txt
+  File: _Directory/dir2/subdir4/subsubdir2/ZRYXj7NbzFSefUOymw2ZoIkrPiHTHafpxXnribJjQ22aleE0YXmYi.txt
+  Size: 90        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 648022519   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.612687478 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 748K
+File type: bmp, Count: 7, Size: 748K
+
+File type: dat, Count: 4, Size: 748K
+
+File type: ico, Count: 5, Size: 748K
+
+File type: jpg, Count: 8, Size: 748K
+
+File type: png, Count: 4, Size: 748K
+
+File type: txt, Count: 4, Size: 748K
+
+Shortest file name: R6uia4QZ.bmp
+Longest file name: cZG5BQE67DlDALi7qFgfJQVvS0Nf9iik2izrQ83SYnBOF37H9aY424ElInJDNelpxzH3bOtoixznQ7LeyczG859JBLD4YMvv8fYb8oMC1WdKInXaz1pGKIVz5K8yKRx.jpg
+
+
+_Directory/dir2/subdir4/subsubdir1
+Most recently modified txt file: _Directory/dir2/subdir4/subsubdir1/PAWROQMsd7o.txt
+  File: _Directory/dir2/subdir4/subsubdir1/PAWROQMsd7o.txt
+  Size: 189       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 645923089   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.608687481 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 100K
+File type: bmp, Count: 1, Size: 100K
+
+File type: dat, Count: 2, Size: 100K
+
+File type: jpg, Count: 1, Size: 100K
+
+File type: png, Count: 2, Size: 100K
+
+File type: txt, Count: 2, Size: 100K
+
+Shortest file name: PAWROQMsd7o.txt
+Longest file name: ItZ3ZXClLehkMmynREqngPVf2aNIMolZsK2i0dxIMsVjx6rt5Jenge4G9lou3NcqtxVBwWRH4DqGCrY5BytYylSZERVdKsw5UPMcipWOfLVKjetl8LKXfQr.jpg
+
+
+_Directory/dir2/subdir4/subsubdir2
+Most recently modified txt file: _Directory/dir2/subdir4/subsubdir2/ZRYXj7NbzFSefUOymw2ZoIkrPiHTHafpxXnribJjQ22aleE0YXmYi.txt
+  File: _Directory/dir2/subdir4/subsubdir2/ZRYXj7NbzFSefUOymw2ZoIkrPiHTHafpxXnribJjQ22aleE0YXmYi.txt
+  Size: 90        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 648022519   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.612687478 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 104K
+File type: bmp, Count: 2, Size: 104K
+
+File type: dat, Count: 1, Size: 104K
+
+File type: jpg, Count: 3, Size: 104K
+
+File type: txt, Count: 2, Size: 104K
+
+Shortest file name: eBJiMnABODBhz8tRiOB.jpg
+Longest file name: cZG5BQE67DlDALi7qFgfJQVvS0Nf9iik2izrQ83SYnBOF37H9aY424ElInJDNelpxzH3bOtoixznQ7LeyczG859JBLD4YMvv8fYb8oMC1WdKInXaz1pGKIVz5K8yKRx.jpg
+
+
+_Directory/dir2/subdir4/subsubdir3
+Total space used: 288K
+File type: bmp, Count: 4, Size: 288K
+
+File type: ico, Count: 2, Size: 288K
+
+File type: jpg, Count: 1, Size: 288K
+
+File type: png, Count: 1, Size: 288K
+
+Shortest file name: R6uia4QZ.bmp
+Longest file name: GexBew4j14ScaACP0L5dgECYu0cwH7Sqm2tPdl2WUk9IAeSHvTphuFLn6KEKUGQKjfrRbcWIbRG8t8SMhqAF3VSR7yRHCnzfOCX3IeilaVkRT0s5q0.bmp
+
+
+_Directory/dir2/subdir4/subsubdir4
+Most recently modified png file: _Directory/dir2/subdir4/subsubdir4/uBBIVXqOFnu2NQWNv8frOmlRnNSUkkTlat7is83GCvco8zJ3P9x8LdYUIffYh2CIS8.png
+  File: _Directory/dir2/subdir4/subsubdir4/uBBIVXqOFnu2NQWNv8frOmlRnNSUkkTlat7is83GCvco8zJ3P9x8LdYUIffYh2CIS8.png
+  Size: 46989     	Blocks: 96         IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 652220148   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.612687478 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 256K
+File type: dat, Count: 1, Size: 256K
+
+File type: ico, Count: 3, Size: 256K
+
+File type: jpg, Count: 3, Size: 256K
+
+File type: png, Count: 1, Size: 256K
+
+Shortest file name: qQYA8VFNNXXJcwDkYRWTw7YNsjXSjs.ico
+Longest file name: Rv7nxBYp6PYQUqf8tt5nmEYyyPHPRigNnneWuKOsHdwZwfFRIIJRURs2fEWUkxAVOZ6CoVNIg6dPDGQMNv.dat
+
+
+_Directory/dir3
+Most recently modified png file: _Directory/dir3/subdir4/subsubdir3/vybdnxy4AZVUB3LsCjMXpP9Mge48Gm4dxl.png
+  File: _Directory/dir3/subdir4/subsubdir3/vybdnxy4AZVUB3LsCjMXpP9Mge48Gm4dxl.png
+  Size: 128674    	Blocks: 256        IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 694157479   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.620687471 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 4.0M
+File type: bmp, Count: 24, Size: 4.0M
+
+File type: dat, Count: 18, Size: 4.0M
+
+File type: ico, Count: 21, Size: 4.0M
+
+File type: jpg, Count: 23, Size: 4.0M
+
+File type: png, Count: 20, Size: 4.0M
+
+File type: txt, Count: 22, Size: 4.0M
+
+Shortest file name: 7tsY.bmp
+Longest file name: enjydjiPrzh3yfxYN7UZpQ7cZkczXdawdjc6sQpgX13fn7bkmi9B62xqkofbfbSqDFVEi4BdxFC6tzcXXdbKCqs59byRAjhAVwkkTcQU6Lw6VoQUxqMktDMoUmPP0aa.ico
+
+
+_Directory/dir3/subdir1
+Most recently modified txt file: _Directory/dir3/subdir1/subsubdir3/I6wuzNbGyxHUS1w1DX45cts5rEAv3A7UHIyL3rCTc6IIRxowz40bBknauJBPs6YeysWXzlxOX85SKQOW.txt
+  File: _Directory/dir3/subdir1/subsubdir3/I6wuzNbGyxHUS1w1DX45cts5rEAv3A7UHIyL3rCTc6IIRxowz40bBknauJBPs6YeysWXzlxOX85SKQOW.txt
+  Size: 232       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 662708253   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.612687478 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 1.3M
+File type: bmp, Count: 6, Size: 1.3M
+
+File type: dat, Count: 5, Size: 1.3M
+
+File type: ico, Count: 6, Size: 1.3M
+
+File type: jpg, Count: 8, Size: 1.3M
+
+File type: png, Count: 3, Size: 1.3M
+
+File type: txt, Count: 4, Size: 1.3M
+
+Shortest file name: zs5E.jpg
+Longest file name: enjydjiPrzh3yfxYN7UZpQ7cZkczXdawdjc6sQpgX13fn7bkmi9B62xqkofbfbSqDFVEi4BdxFC6tzcXXdbKCqs59byRAjhAVwkkTcQU6Lw6VoQUxqMktDMoUmPP0aa.ico
+
+
+_Directory/dir3/subdir1/subsubdir1
+Most recently modified txt file: _Directory/dir3/subdir1/subsubdir1/OwuQNq9GAAvJpNkYkwHszKZ2SnSdLliE9pby0fhXIRiy.txt
+  File: _Directory/dir3/subdir1/subsubdir1/OwuQNq9GAAvJpNkYkwHszKZ2SnSdLliE9pby0fhXIRiy.txt
+  Size: 49        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 658516521   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.612687478 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 404K
+File type: bmp, Count: 2, Size: 404K
+
+File type: ico, Count: 1, Size: 404K
+
+File type: jpg, Count: 2, Size: 404K
+
+File type: png, Count: 1, Size: 404K
+
+File type: txt, Count: 2, Size: 404K
+
+Shortest file name: 1GOeS5hED.txt
+Longest file name: kNJbJzssqNlY6mJW4ngbJ7X4sadoayAfav0zj7PzD72W8YK0vB5SorXZrfiann2oAHRCmxghPMjbP02xVae0JELpBhWocJiZPE6UsxhAoD5YYwUNf2jViDYwXf.bmp
+
+
+_Directory/dir3/subdir1/subsubdir2
+Most recently modified txt file: _Directory/dir3/subdir1/subsubdir2/Nd1k5FNT420Pw5WrbP0HOVXcvVUExhr3NcN1vGaDtuQeD1k801gsrIlE4oOEpOR5YiNkPmCSEtJqGK3zy9.txt
+  File: _Directory/dir3/subdir1/subsubdir2/Nd1k5FNT420Pw5WrbP0HOVXcvVUExhr3NcN1vGaDtuQeD1k801gsrIlE4oOEpOR5YiNkPmCSEtJqGK3zy9.txt
+  Size: 187       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 660603789   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.612687478 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 232K
+File type: bmp, Count: 1, Size: 232K
+
+File type: dat, Count: 2, Size: 232K
+
+File type: ico, Count: 1, Size: 232K
+
+File type: jpg, Count: 3, Size: 232K
+
+File type: txt, Count: 1, Size: 232K
+
+Shortest file name: F3DjFfMnLF.jpg
+Longest file name: LI9eweL2wmsJfBTG5t9nGJrpiWl2ZWtVJ5ACOlrlBkrLFam9esYmU26b30ATVnSwbOjcroCR3m0QXiod4lPjGeT.ico
+
+
+_Directory/dir3/subdir1/subsubdir3
+Most recently modified txt file: _Directory/dir3/subdir1/subsubdir3/I6wuzNbGyxHUS1w1DX45cts5rEAv3A7UHIyL3rCTc6IIRxowz40bBknauJBPs6YeysWXzlxOX85SKQOW.txt
+  File: _Directory/dir3/subdir1/subsubdir3/I6wuzNbGyxHUS1w1DX45cts5rEAv3A7UHIyL3rCTc6IIRxowz40bBknauJBPs6YeysWXzlxOX85SKQOW.txt
+  Size: 232       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 662708253   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.612687478 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 248K
+File type: bmp, Count: 1, Size: 248K
+
+File type: dat, Count: 1, Size: 248K
+
+File type: ico, Count: 2, Size: 248K
+
+File type: jpg, Count: 1, Size: 248K
+
+File type: png, Count: 2, Size: 248K
+
+File type: txt, Count: 1, Size: 248K
+
+Shortest file name: zs5E.jpg
+Longest file name: JnTkFUT2Le4w8tIz5CHT1HLw8CEQrzGq4NPJgVNEwfYfx81KbifeJkMEYPJnMcIamtGxV084INZ4pxD7BnzAQ4vxrewbbqzWxyw203khQil1r.png
+
+
+_Directory/dir3/subdir1/subsubdir4
+Total space used: 392K
+File type: bmp, Count: 2, Size: 392K
+
+File type: dat, Count: 2, Size: 392K
+
+File type: ico, Count: 2, Size: 392K
+
+File type: jpg, Count: 2, Size: 392K
+
+Shortest file name: hlmEsCOSR.jpg
+Longest file name: enjydjiPrzh3yfxYN7UZpQ7cZkczXdawdjc6sQpgX13fn7bkmi9B62xqkofbfbSqDFVEi4BdxFC6tzcXXdbKCqs59byRAjhAVwkkTcQU6Lw6VoQUxqMktDMoUmPP0aa.ico
+
+
+_Directory/dir3/subdir2
+Most recently modified jpg file: _Directory/dir3/subdir2/subsubdir4/vvK03b6m0HE8CbSWHFS9Z2lWzxHvVH9XPXSQWNd2bxP7cDJm12ocDuu8xqB1F1iKfNtdgIoB7V.jpg
+  File: _Directory/dir3/subdir2/subsubdir4/vvK03b6m0HE8CbSWHFS9Z2lWzxHvVH9XPXSQWNd2bxP7cDJm12ocDuu8xqB1F1iKfNtdgIoB7V.jpg
+  Size: 62840     	Blocks: 128        IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 675326955   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.616687474 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 1.1M
+File type: bmp, Count: 6, Size: 1.1M
+
+File type: dat, Count: 5, Size: 1.1M
+
+File type: ico, Count: 7, Size: 1.1M
+
+File type: jpg, Count: 5, Size: 1.1M
+
+File type: png, Count: 6, Size: 1.1M
+
+File type: txt, Count: 3, Size: 1.1M
+
+Shortest file name: 7tsY.bmp
+Longest file name: s2itO5lJplHbrwLRgjpM0esRsYtnw0XKJ0pOwupso7rMZWPUy7RD5ag06qvh08rPdaCugxfBwXj0fPA7ehZ9ocI22zsjyKMi8r6apDOq4e9VqSQF3i6kqiqQKJHp3P.ico
+
+
+_Directory/dir3/subdir2/subsubdir1
+Most recently modified txt file: _Directory/dir3/subdir2/subsubdir1/IFXNO9WV8dqj7W5tSNL6cgpwkAA14smh8tn802wwMl0D8SfhmzoEDBqiz4INAQTpzY6xN9Fgxz7SB1t1.txt
+  File: _Directory/dir3/subdir2/subsubdir1/IFXNO9WV8dqj7W5tSNL6cgpwkAA14smh8tn802wwMl0D8SfhmzoEDBqiz4INAQTpzY6xN9Fgxz7SB1t1.txt
+  Size: 116       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 668995725   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.616687474 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 440K
+File type: bmp, Count: 1, Size: 440K
+
+File type: ico, Count: 2, Size: 440K
+
+File type: jpg, Count: 2, Size: 440K
+
+File type: png, Count: 2, Size: 440K
+
+File type: txt, Count: 1, Size: 440K
+
+Shortest file name: oIcx9k4xwgSGM99WwmGk3.png
+Longest file name: ydwj5AkWzytJCG5KMTyXYCISsWQ4sYokxNmN2ny7gcH70DEFpu2ApUsSXcQo1rI7liao7mFHudjV6HD6NnTeoXHYKfjP5oYIxL4qOT8d1gyRq0v7HjY.jpg
+
+
+_Directory/dir3/subdir2/subsubdir2
+Most recently modified txt file: _Directory/dir3/subdir2/subsubdir2/NKhjhdU7MXacVG4vun4pnkqHAXuv6MRWVCQK2jQpc8PMmAkHVnQcDWN2ewYy2NColyeCrSaN.txt
+  File: _Directory/dir3/subdir2/subsubdir2/NKhjhdU7MXacVG4vun4pnkqHAXuv6MRWVCQK2jQpc8PMmAkHVnQcDWN2ewYy2NColyeCrSaN.txt
+  Size: 243       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 671089757   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.616687474 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 172K
+File type: bmp, Count: 3, Size: 172K
+
+File type: dat, Count: 1, Size: 172K
+
+File type: ico, Count: 2, Size: 172K
+
+File type: png, Count: 1, Size: 172K
+
+File type: txt, Count: 1, Size: 172K
+
+Shortest file name: 7tsY.bmp
+Longest file name: FqUhyNDqJcljTCR1XICa2AFGp2nVBT2iSaWZa0OjTO5x2ck9JmC0ukleruL2OZp8dZ2vVgAYo3LQt5NwmoikOGH3V7QrX7su.png
+
+
+_Directory/dir3/subdir2/subsubdir3
+Total space used: 248K
+File type: bmp, Count: 2, Size: 248K
+
+File type: dat, Count: 1, Size: 248K
+
+File type: ico, Count: 2, Size: 248K
+
+File type: jpg, Count: 1, Size: 248K
+
+File type: png, Count: 2, Size: 248K
+
+Shortest file name: tAvykBcsPkee7UjB8a.bmp
+Longest file name: 9xNk6kXHQHso2iPkyQ8ECdExPWT0HNoj998tUtRGOGSs6p9VKQ5m1DR1edrb2p3KCJ3oB5rdL4aeAcfcJyAwuLhC1FABb06wWknm3KeN7ePXi3J01rjM.jpg
+
+
+_Directory/dir3/subdir2/subsubdir4
+Most recently modified png file: _Directory/dir3/subdir2/subsubdir4/TipieAW4depxsvTl3bamkb5m1cbdvPQI8SpSFp7acB7H9R1tyPBhjVe7Hts6tx7FDkPyMfxjDV0AHhCBE.png
+  File: _Directory/dir3/subdir2/subsubdir4/TipieAW4depxsvTl3bamkb5m1cbdvPQI8SpSFp7acB7H9R1tyPBhjVe7Hts6tx7FDkPyMfxjDV0AHhCBE.png
+  Size: 17189     	Blocks: 40         IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 675343118   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.616687474 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 252K
+File type: dat, Count: 3, Size: 252K
+
+File type: ico, Count: 1, Size: 252K
+
+File type: jpg, Count: 2, Size: 252K
+
+File type: png, Count: 1, Size: 252K
+
+File type: txt, Count: 1, Size: 252K
+
+Shortest file name: uNdtOYsP4NLrjMqt5nrM.dat
+Longest file name: s2itO5lJplHbrwLRgjpM0esRsYtnw0XKJ0pOwupso7rMZWPUy7RD5ag06qvh08rPdaCugxfBwXj0fPA7ehZ9ocI22zsjyKMi8r6apDOq4e9VqSQF3i6kqiqQKJHp3P.ico
+
+
+_Directory/dir3/subdir3
+Most recently modified txt file: _Directory/dir3/subdir3/subsubdir4/kOLSS2d6agvhVVerSZkbHMWLl7fdBUMRWdQqoOBENcb2wqJn1xqx4U8RLRY7nvQxwRYjDh6tYjbG6ymolrDtXaWid3sVVfF71chn233RcT.txt
+  File: _Directory/dir3/subdir3/subsubdir4/kOLSS2d6agvhVVerSZkbHMWLl7fdBUMRWdQqoOBENcb2wqJn1xqx4U8RLRY7nvQxwRYjDh6tYjbG6ymolrDtXaWid3sVVfF71chn233RcT.txt
+  Size: 222       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 685777538   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.620687471 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 616K
+File type: bmp, Count: 5, Size: 616K
+
+File type: dat, Count: 4, Size: 616K
+
+File type: ico, Count: 6, Size: 616K
+
+File type: jpg, Count: 4, Size: 616K
+
+File type: png, Count: 4, Size: 616K
+
+File type: txt, Count: 9, Size: 616K
+
+Shortest file name: HcRT.ico
+Longest file name: RyVVyWfrWLAShfACvTH9ummQxZrh3ziPGsad1r3WeHLFWph2u8koGieFSuFIFJ11mlcrgfiZV7MRDQgxWByj2ZfRmIKH6QeAhw9BG5JZ2UavgLYEYNb.txt
+
+
+_Directory/dir3/subdir3/subsubdir1
+Most recently modified txt file: _Directory/dir3/subdir3/subsubdir1/gPX9GKfyGG06MXLNUAuByVfJ91ccszTTfaBhsGoza6bARxgdj9vi6FWa3TTyzUI63Kr7vmx7LFyG.txt
+  File: _Directory/dir3/subdir3/subsubdir1/gPX9GKfyGG06MXLNUAuByVfJ91ccszTTfaBhsGoza6bARxgdj9vi6FWa3TTyzUI63Kr7vmx7LFyG.txt
+  Size: 8         	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 679491264   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.616687474 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 96K
+File type: bmp, Count: 2, Size: 96K
+
+File type: dat, Count: 1, Size: 96K
+
+File type: ico, Count: 2, Size: 96K
+
+File type: jpg, Count: 1, Size: 96K
+
+File type: txt, Count: 2, Size: 96K
+
+Shortest file name: Pc4g580YAMCCW.bmp
+Longest file name: eXwVHEvEilTEw40c3Vx8gMzIkt8olo5CXMua55TTJeq50loC4uvTim4awEgSNHD8M7YQ9OQ5fso0Ch5plq88LBZLRGNyEE0l.jpg
+
+
+_Directory/dir3/subdir3/subsubdir2
+Most recently modified txt file: _Directory/dir3/subdir3/subsubdir2/GRRAdkPXrz9OXzYrHNsHoY2VMurMBw7ZTvx.txt
+  File: _Directory/dir3/subdir3/subsubdir2/GRRAdkPXrz9OXzYrHNsHoY2VMurMBw7ZTvx.txt
+  Size: 198       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 681592052   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.616687474 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 196K
+File type: dat, Count: 3, Size: 196K
+
+File type: ico, Count: 1, Size: 196K
+
+File type: png, Count: 2, Size: 196K
+
+File type: txt, Count: 2, Size: 196K
+
+Shortest file name: pesYpyMkHPvJ16d1isQ1vD.png
+Longest file name: ISMOPfZ6xBTzWtaq5EKOtPB6XvFsAHWOoNH1ameVhufRHZfdLATRmgCvyS53ZN6WMitQEw3B6ERgUXks8dwdnQrZ6rg0ahhn0q2AayAc3LCgNpq4eTK.dat
+
+
+_Directory/dir3/subdir3/subsubdir3
+Most recently modified txt file: _Directory/dir3/subdir3/subsubdir3/RyVVyWfrWLAShfACvTH9ummQxZrh3ziPGsad1r3WeHLFWph2u8koGieFSuFIFJ11mlcrgfiZV7MRDQgxWByj2ZfRmIKH6QeAhw9BG5JZ2UavgLYEYNb.txt
+  File: _Directory/dir3/subdir3/subsubdir3/RyVVyWfrWLAShfACvTH9ummQxZrh3ziPGsad1r3WeHLFWph2u8koGieFSuFIFJ11mlcrgfiZV7MRDQgxWByj2ZfRmIKH6QeAhw9BG5JZ2UavgLYEYNb.txt
+  Size: 244       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 683674133   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.616687474 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 92K
+File type: bmp, Count: 2, Size: 92K
+
+File type: ico, Count: 1, Size: 92K
+
+File type: png, Count: 1, Size: 92K
+
+File type: txt, Count: 4, Size: 92K
+
+Shortest file name: fDP4UUxOANjRuGNQu6J4tEgOm.bmp
+Longest file name: RyVVyWfrWLAShfACvTH9ummQxZrh3ziPGsad1r3WeHLFWph2u8koGieFSuFIFJ11mlcrgfiZV7MRDQgxWByj2ZfRmIKH6QeAhw9BG5JZ2UavgLYEYNb.txt
+
+
+_Directory/dir3/subdir3/subsubdir4
+Most recently modified txt file: _Directory/dir3/subdir3/subsubdir4/kOLSS2d6agvhVVerSZkbHMWLl7fdBUMRWdQqoOBENcb2wqJn1xqx4U8RLRY7nvQxwRYjDh6tYjbG6ymolrDtXaWid3sVVfF71chn233RcT.txt
+  File: _Directory/dir3/subdir3/subsubdir4/kOLSS2d6agvhVVerSZkbHMWLl7fdBUMRWdQqoOBENcb2wqJn1xqx4U8RLRY7nvQxwRYjDh6tYjbG6ymolrDtXaWid3sVVfF71chn233RcT.txt
+  Size: 222       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 685777538   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.620687471 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 232K
+File type: bmp, Count: 1, Size: 232K
+
+File type: ico, Count: 2, Size: 232K
+
+File type: jpg, Count: 3, Size: 232K
+
+File type: png, Count: 1, Size: 232K
+
+File type: txt, Count: 1, Size: 232K
+
+Shortest file name: HcRT.ico
+Longest file name: kOLSS2d6agvhVVerSZkbHMWLl7fdBUMRWdQqoOBENcb2wqJn1xqx4U8RLRY7nvQxwRYjDh6tYjbG6ymolrDtXaWid3sVVfF71chn233RcT.txt
+
+
+_Directory/dir3/subdir4
+Most recently modified txt file: _Directory/dir3/subdir4/subsubdir4/SMwohgTdGVYB6NzOLG9Oowdcl5L0czCtTG0GpdUXUafCiufDZb1pWc9CZq1wp1Vyx1eG0iCx1ZfRM5AB4Lk8IMoUldgRqAzUqf5Z1fbFhDiKr2bM2uzKT.txt
+  File: _Directory/dir3/subdir4/subsubdir4/SMwohgTdGVYB6NzOLG9Oowdcl5L0czCtTG0GpdUXUafCiufDZb1pWc9CZq1wp1Vyx1eG0iCx1ZfRM5AB4Lk8IMoUldgRqAzUqf5Z1fbFhDiKr2bM2uzKT.txt
+  Size: 200       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 696256659   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.620687471 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 1.1M
+File type: bmp, Count: 7, Size: 1.1M
+
+File type: dat, Count: 4, Size: 1.1M
+
+File type: ico, Count: 2, Size: 1.1M
+
+File type: jpg, Count: 6, Size: 1.1M
+
+File type: png, Count: 7, Size: 1.1M
+
+File type: txt, Count: 6, Size: 1.1M
+
+Shortest file name: S6EIKaf.bmp
+Longest file name: wy1azLOiKqJaGGQXzFnCCzkhXhlNLN9wQGDjLg4QY1tIZgmUU10u3fWe9T9l8PQ8bwCj0uBtpmKZwTaT5mOL7rmHuoR0AMcOdhOzhF84OPSuqXloRqBsMAS3FikDRr.ico
+
+
+_Directory/dir3/subdir4/subsubdir1
+Most recently modified txt file: _Directory/dir3/subdir4/subsubdir1/OK74eThUnICdNIkahNwSn1jK0DptqUIsIKy1pn6h1gdqDjfYXSh8honJNJipAAlcNRYRaLtqaSWomcLeCWjSMzVAA2nfqPxVRmClE4.txt
+  File: _Directory/dir3/subdir4/subsubdir1/OK74eThUnICdNIkahNwSn1jK0DptqUIsIKy1pn6h1gdqDjfYXSh8honJNJipAAlcNRYRaLtqaSWomcLeCWjSMzVAA2nfqPxVRmClE4.txt
+  Size: 208       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 689964221   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.620687471 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 260K
+File type: bmp, Count: 4, Size: 260K
+
+File type: jpg, Count: 1, Size: 260K
+
+File type: png, Count: 2, Size: 260K
+
+File type: txt, Count: 1, Size: 260K
+
+Shortest file name: S6EIKaf.bmp
+Longest file name: qH8XH09wlcdnmqYgXdBBR0fICXlArrnuulIIVjhdvF4SGJSmmf1C9GvuqGsgPYZTymyNY5gF8UIsysNUBXTn3zeZoIJi3qRYRksJG0Q7h0Vyl6EeXQ2vfGiroruxd.png
+
+
+_Directory/dir3/subdir4/subsubdir2
+Most recently modified txt file: _Directory/dir3/subdir4/subsubdir2/s5BV2TRCUmyyVL2QsB1bn086uAqaUbuSJlu46gGBPdiOMLEs6JTGbubJma9aPQhuw6RU1SYB1Yq58Llxw5Nv7k7dlgg663dviQ.txt
+  File: _Directory/dir3/subdir4/subsubdir2/s5BV2TRCUmyyVL2QsB1bn086uAqaUbuSJlu46gGBPdiOMLEs6JTGbubJma9aPQhuw6RU1SYB1Yq58Llxw5Nv7k7dlgg663dviQ.txt
+  Size: 112       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 692062918   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.620687471 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 208K
+File type: bmp, Count: 1, Size: 208K
+
+File type: dat, Count: 1, Size: 208K
+
+File type: jpg, Count: 2, Size: 208K
+
+File type: png, Count: 1, Size: 208K
+
+File type: txt, Count: 3, Size: 208K
+
+Shortest file name: oWngzZezU8YWw8dJkfmnKgGjgwD3svSc7mun7lnERfIja.jpg
+Longest file name: s5BV2TRCUmyyVL2QsB1bn086uAqaUbuSJlu46gGBPdiOMLEs6JTGbubJma9aPQhuw6RU1SYB1Yq58Llxw5Nv7k7dlgg663dviQ.txt
+
+
+_Directory/dir3/subdir4/subsubdir3
+Total space used: 480K
+File type: bmp, Count: 1, Size: 480K
+
+File type: dat, Count: 1, Size: 480K
+
+File type: jpg, Count: 2, Size: 480K
+
+File type: png, Count: 4, Size: 480K
+
+Shortest file name: vybdnxy4AZVUB3LsCjMXpP9Mge48Gm4dxl.png
+Longest file name: A30LG5hPHHhQDfpxrQhFUJWk1vSukDaUOCG71gXz70q2HMW6jdh9bMDS3j6HcmIvWOP2enieAp7szJ3sVjnqvEzrSJawpQxG0kWU7ulls0bhSkkHHcJAfgMYcM5T5.jpg
+
+
+_Directory/dir3/subdir4/subsubdir4
+Total space used: 80K
+File type: bmp, Count: 1, Size: 80K
+
+File type: dat, Count: 2, Size: 80K
+
+File type: ico, Count: 2, Size: 80K
+
+File type: jpg, Count: 1, Size: 80K
+
+File type: txt, Count: 2, Size: 80K
+
+Shortest file name: 8yU2tpTc7ryxYXdlP0yko.jpg
+Longest file name: wy1azLOiKqJaGGQXzFnCCzkhXhlNLN9wQGDjLg4QY1tIZgmUU10u3fWe9T9l8PQ8bwCj0uBtpmKZwTaT5mOL7rmHuoR0AMcOdhOzhF84OPSuqXloRqBsMAS3FikDRr.ico
+
+
+_Directory/dir4
+Most recently modified txt file: _Directory/dir4/subdir4/subsubdir2/f0fl53fqrGvyMdND4APWXu96yyGY3xBp1YLv5TCZNn2A987QNgkeFD4qxI7eHCrTtGbbYdELkXKNzEcS9Y4TDpYjnDUhHMgWSWxbdduxzNdNjk8gT.txt
+  File: _Directory/dir4/subdir4/subsubdir2/f0fl53fqrGvyMdND4APWXu96yyGY3xBp1YLv5TCZNn2A987QNgkeFD4qxI7eHCrTtGbbYdELkXKNzEcS9Y4TDpYjnDUhHMgWSWxbdduxzNdNjk8gT.txt
+  Size: 159       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 736115448   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.632687461 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 3.5M
+File type: bmp, Count: 15, Size: 3.5M
+
+File type: dat, Count: 19, Size: 3.5M
+
+File type: ico, Count: 19, Size: 3.5M
+
+File type: jpg, Count: 25, Size: 3.5M
+
+File type: png, Count: 17, Size: 3.5M
+
+File type: txt, Count: 21, Size: 3.5M
+
+Shortest file name: xs7l.jpg
+Longest file name: gPil1FCxZGS6NqzzxKhjhlbiSkZx6YlYecX11hm4m6UI7m7XdVLJzyF0pCXE6cDCpXg4iSdpNHHmTPThQoPqDcD00YO2ff6zw30oU0ZoL4JElVM928Smgg84iiZvzRd.jpg
+
+
+_Directory/dir4/subdir1
+Most recently modified txt file: _Directory/dir4/subdir1/subsubdir4/QiIszwdfsPa81ORf83dplDNWjk7P3MLTfD7YJpBx8cUd3zC7AgTaLizG2ZYBfruQOYq.txt
+  File: _Directory/dir4/subdir1/subsubdir4/QiIszwdfsPa81ORf83dplDNWjk7P3MLTfD7YJpBx8cUd3zC7AgTaLizG2ZYBfruQOYq.txt
+  Size: 78        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 708839051   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.624687468 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 876K
+File type: bmp, Count: 5, Size: 876K
+
+File type: dat, Count: 8, Size: 876K
+
+File type: ico, Count: 4, Size: 876K
+
+File type: jpg, Count: 5, Size: 876K
+
+File type: png, Count: 6, Size: 876K
+
+File type: txt, Count: 4, Size: 876K
+
+Shortest file name: p5stJKzPyDCit3n6AOg4SlD3vk5gSjfJ.dat
+Longest file name: o5NOPQ8BL3YJwMKZQQE0EYjxnwWMO1R0SkcKAkf1euBU9mELBLCrtNTAfp9Bl3Rxeu5LLfStMd1R2uLuZhdUBLZXNCAuaBqV4zb2JBLPNDjeR4bjT9YteqxFMOKgA.dat
+
+
+_Directory/dir4/subdir1/subsubdir1
+Total space used: 436K
+File type: bmp, Count: 2, Size: 436K
+
+File type: dat, Count: 1, Size: 436K
+
+File type: ico, Count: 1, Size: 436K
+
+File type: jpg, Count: 3, Size: 436K
+
+File type: png, Count: 1, Size: 436K
+
+Shortest file name: IKSecEQiSTF6ZTkslR9o7afcLbbREenClfTe5ovKVU5fTlJCLP02M37Ih0lVqCLfy.bmp
+Longest file name: 3ChDcG5vev2iNCsL0HjMBs77jCbhujOMwIW2W2jU7di5CrPeLnwrmjHTAR4J8mX9XBv8cg2Gu2u1wz7d2CKPJIGrd9TabYiHcorJCUT74U.ico
+
+
+_Directory/dir4/subdir1/subsubdir2
+Most recently modified png file: _Directory/dir4/subdir1/subsubdir2/U7mxvPqS56IVnskf9YbVeeHR6OopbYofSjsW6x.png
+  File: _Directory/dir4/subdir1/subsubdir2/U7mxvPqS56IVnskf9YbVeeHR6OopbYofSjsW6x.png
+  Size: 12344     	Blocks: 32         IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 704648800   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.624687468 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 92K
+File type: dat, Count: 1, Size: 92K
+
+File type: ico, Count: 1, Size: 92K
+
+File type: jpg, Count: 2, Size: 92K
+
+File type: png, Count: 3, Size: 92K
+
+File type: txt, Count: 1, Size: 92K
+
+Shortest file name: U7mxvPqS56IVnskf9YbVeeHR6OopbYofSjsW6x.png
+Longest file name: camLnVCRQ2HDb9HnUMLfGiiTx3OqlJiTW39QFpmOMQ6YXrKxPHNFqAHI9zyKA5QzDFMeGszBXobdje23EnOYwEob9xdGxZ5dz8mlMIKU9v0GhAPcijnidCjOveA1x.ico
+
+
+_Directory/dir4/subdir1/subsubdir3
+Most recently modified txt file: _Directory/dir4/subdir1/subsubdir3/SRaNeAueMpNKJO1iHCE3rVkeiklcu1loBQEae0rCrZk.txt
+  File: _Directory/dir4/subdir1/subsubdir3/SRaNeAueMpNKJO1iHCE3rVkeiklcu1loBQEae0rCrZk.txt
+  Size: 255       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 706744986   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.624687468 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 216K
+File type: bmp, Count: 2, Size: 216K
+
+File type: dat, Count: 2, Size: 216K
+
+File type: ico, Count: 2, Size: 216K
+
+File type: txt, Count: 2, Size: 216K
+
+Shortest file name: p5stJKzPyDCit3n6AOg4SlD3vk5gSjfJ.dat
+Longest file name: o5NOPQ8BL3YJwMKZQQE0EYjxnwWMO1R0SkcKAkf1euBU9mELBLCrtNTAfp9Bl3Rxeu5LLfStMd1R2uLuZhdUBLZXNCAuaBqV4zb2JBLPNDjeR4bjT9YteqxFMOKgA.dat
+
+
+_Directory/dir4/subdir1/subsubdir4
+Most recently modified txt file: _Directory/dir4/subdir1/subsubdir4/QiIszwdfsPa81ORf83dplDNWjk7P3MLTfD7YJpBx8cUd3zC7AgTaLizG2ZYBfruQOYq.txt
+  File: _Directory/dir4/subdir1/subsubdir4/QiIszwdfsPa81ORf83dplDNWjk7P3MLTfD7YJpBx8cUd3zC7AgTaLizG2ZYBfruQOYq.txt
+  Size: 78        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 708839051   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.624687468 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 132K
+File type: bmp, Count: 1, Size: 132K
+
+File type: dat, Count: 4, Size: 132K
+
+File type: png, Count: 2, Size: 132K
+
+File type: txt, Count: 1, Size: 132K
+
+Shortest file name: 2wIiCWnbPXLqiA2K6WAgh4vWb0XwPAL78eo.bmp
+Longest file name: foTN4K7TPVFEEnoFYQWQVAquTDAG0LkpBj4anVKybrqowGFB56se6Wq4ok7GLK4wDz8DKVDBbhHULlJVTnNM4L1jBjd6KqhM4aIuxLrojVpkhwQaQZG6SrBA.dat
+
+
+_Directory/dir4/subdir2
+Most recently modified txt file: _Directory/dir4/subdir2/subsubdir4/P4vBpQvFhGYpcLZpgAA2LHDe3L6joqNkzbXFeAVKvj5JkaI2D2R9c60FyAIZKEy.txt
+  File: _Directory/dir4/subdir2/subsubdir4/P4vBpQvFhGYpcLZpgAA2LHDe3L6joqNkzbXFeAVKvj5JkaI2D2R9c60FyAIZKEy.txt
+  Size: 19        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 719326304   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.628687464 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 1.1M
+File type: bmp, Count: 4, Size: 1.1M
+
+File type: dat, Count: 5, Size: 1.1M
+
+File type: ico, Count: 4, Size: 1.1M
+
+File type: jpg, Count: 7, Size: 1.1M
+
+File type: png, Count: 5, Size: 1.1M
+
+File type: txt, Count: 7, Size: 1.1M
+
+Shortest file name: 2wNyGo.txt
+Longest file name: gPil1FCxZGS6NqzzxKhjhlbiSkZx6YlYecX11hm4m6UI7m7XdVLJzyF0pCXE6cDCpXg4iSdpNHHmTPThQoPqDcD00YO2ff6zw30oU0ZoL4JElVM928Smgg84iiZvzRd.jpg
+
+
+_Directory/dir4/subdir2/subsubdir1
+Most recently modified txt file: _Directory/dir4/subdir2/subsubdir1/VGrWNLJkNo4AxZkGyBlAY2hDPNC3kdXOJaq0uphsaJ3Gyy2bteE4HziYKgZoOVBJ4VGUIg5RUVyuPHhHBAouaVvluRk0nH7vdaLgw2P1u4mFqt6U.txt
+  File: _Directory/dir4/subdir2/subsubdir1/VGrWNLJkNo4AxZkGyBlAY2hDPNC3kdXOJaq0uphsaJ3Gyy2bteE4HziYKgZoOVBJ4VGUIg5RUVyuPHhHBAouaVvluRk0nH7vdaLgw2P1u4mFqt6U.txt
+  Size: 58        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 713033117   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.624687468 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 144K
+File type: dat, Count: 1, Size: 144K
+
+File type: ico, Count: 2, Size: 144K
+
+File type: jpg, Count: 1, Size: 144K
+
+File type: txt, Count: 4, Size: 144K
+
+Shortest file name: 2wNyGo.txt
+Longest file name: gPil1FCxZGS6NqzzxKhjhlbiSkZx6YlYecX11hm4m6UI7m7XdVLJzyF0pCXE6cDCpXg4iSdpNHHmTPThQoPqDcD00YO2ff6zw30oU0ZoL4JElVM928Smgg84iiZvzRd.jpg
+
+
+_Directory/dir4/subdir2/subsubdir2
+Total space used: 256K
+File type: bmp, Count: 1, Size: 256K
+
+File type: dat, Count: 2, Size: 256K
+
+File type: jpg, Count: 3, Size: 256K
+
+File type: png, Count: 2, Size: 256K
+
+Shortest file name: OfGXP6L7du8YwAjB2x.png
+Longest file name: 0KIPmizYDicYLDxcvhJgQ4922wTHzxR4TglJIBCiU7v3OxZOxU4h3yUxgeL2hLR2jGc8u6qEJwQr7Ob7OjdFKjmr6e829nR13XewSbHQTwogKROA9yx.dat
+
+
+_Directory/dir4/subdir2/subsubdir3
+Most recently modified png file: _Directory/dir4/subdir2/subsubdir3/XgXs0i6qesymNV4SgUxm9NoiUxO59esqoCH6XgTMnLrfvNS.png
+  File: _Directory/dir4/subdir2/subsubdir3/XgXs0i6qesymNV4SgUxm9NoiUxO59esqoCH6XgTMnLrfvNS.png
+  Size: 149232    	Blocks: 296        IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 717229069   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.624687468 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 312K
+File type: bmp, Count: 3, Size: 312K
+
+File type: dat, Count: 1, Size: 312K
+
+File type: jpg, Count: 1, Size: 312K
+
+File type: png, Count: 1, Size: 312K
+
+File type: txt, Count: 2, Size: 312K
+
+Shortest file name: XgXs0i6qesymNV4SgUxm9NoiUxO59esqoCH6XgTMnLrfvNS.png
+Longest file name: vq9WcYtq1RZtkjaGXLU7MoHwWQos7YimUaTZNdjLxj3xvoLE5bjgErqV4tGrhgRjXRDsfBERBzaxlcBEV7mPuQ4B7vMAyhhZmQSQGBwZPGDCvf15d.txt
+
+
+_Directory/dir4/subdir2/subsubdir4
+Most recently modified txt file: _Directory/dir4/subdir2/subsubdir4/P4vBpQvFhGYpcLZpgAA2LHDe3L6joqNkzbXFeAVKvj5JkaI2D2R9c60FyAIZKEy.txt
+  File: _Directory/dir4/subdir2/subsubdir4/P4vBpQvFhGYpcLZpgAA2LHDe3L6joqNkzbXFeAVKvj5JkaI2D2R9c60FyAIZKEy.txt
+  Size: 19        	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 719326304   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.628687464 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 380K
+File type: dat, Count: 1, Size: 380K
+
+File type: ico, Count: 2, Size: 380K
+
+File type: jpg, Count: 2, Size: 380K
+
+File type: png, Count: 2, Size: 380K
+
+File type: txt, Count: 1, Size: 380K
+
+Shortest file name: 3bFQxjeonwhb5fIg608vtDhxB0NmzLu.png
+Longest file name: MW9UrdDfvWUknVvdQJecTQaK8h2qN5z577oS3Q2CSQhPJ1ZdzvOawgKBSEYsbFHRVGdCa1AlSXunk1pTvyAOVYQmvKbVB6roASvPmRODu8dY54sE.jpg
+
+
+_Directory/dir4/subdir3
+Most recently modified txt file: _Directory/dir4/subdir3/subsubdir4/VOvGs7Y3tiaMdKAuwNrVlTrKFBwlb6jhXnkYJRGT49VZWMb35GUsKK76YmmjsPZKAieAmw7VCaxjdZc4SkJURO0usdqCSIq.txt
+  File: _Directory/dir4/subdir3/subsubdir4/VOvGs7Y3tiaMdKAuwNrVlTrKFBwlb6jhXnkYJRGT49VZWMb35GUsKK76YmmjsPZKAieAmw7VCaxjdZc4SkJURO0usdqCSIq.txt
+  Size: 4         	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 729813847   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.628687464 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 768K
+File type: bmp, Count: 2, Size: 768K
+
+File type: dat, Count: 4, Size: 768K
+
+File type: ico, Count: 10, Size: 768K
+
+File type: jpg, Count: 8, Size: 768K
+
+File type: png, Count: 2, Size: 768K
+
+File type: txt, Count: 6, Size: 768K
+
+Shortest file name: xs7l.jpg
+Longest file name: e0gruKEtdEUJ00U8H6VtRepXYQ2yarV6rzXhBoHUEgntD5SgNuBiOG1QVgiHWXM3M0kTny0yyMBceAdo7FbGVm16loXip9Cm70KizPXdJXYSyzYh0TzReEk3kQka.ico
+
+
+_Directory/dir4/subdir3/subsubdir1
+Total space used: 348K
+File type: bmp, Count: 1, Size: 348K
+
+File type: dat, Count: 1, Size: 348K
+
+File type: ico, Count: 3, Size: 348K
+
+File type: jpg, Count: 3, Size: 348K
+
+Shortest file name: L3KMv6ElZTdWY4M7TN5QV.bmp
+Longest file name: aAnZh2Ap68nLiPp6hWGTNbTMRJito5W8WBOcESUy6xl44FOvsKv4pBTE30gceliQblAQl0jR1bP4vgBDiDMBNHdQHtI534VOAtg0me8MowAn6jNH5kwn7gyymTz8.dat
+
+
+_Directory/dir4/subdir3/subsubdir2
+Most recently modified jpg file: _Directory/dir4/subdir3/subsubdir2/zsTXAGZgpcnsnvQfo90CFf68ORcQnMMBNrF11yhOM6FNK4xZlTAT9bJt1Eh747e59oRfX05TQYQ4JmR904tTlmShAmklsE3GGusSuXlyqNjG0Exz.jpg
+  File: _Directory/dir4/subdir3/subsubdir2/zsTXAGZgpcnsnvQfo90CFf68ORcQnMMBNrF11yhOM6FNK4xZlTAT9bJt1Eh747e59oRfX05TQYQ4JmR904tTlmShAmklsE3GGusSuXlyqNjG0Exz.jpg
+  Size: 10418     	Blocks: 24         IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 725617248   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.628687464 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 148K
+File type: ico, Count: 3, Size: 148K
+
+File type: jpg, Count: 3, Size: 148K
+
+File type: txt, Count: 2, Size: 148K
+
+Shortest file name: xs7l.jpg
+Longest file name: Wkyt52t5k6SRYwDc9EDsCA4V5X1TVdmXcVbHc8vyNDPch43RhXsHmcm5Udb8GV8JLcd6ATzsu0I54HrFYtOFjEp9W1qYFIL9ggYjzooKQJYKUo5BfeuOXPup.ico
+
+
+_Directory/dir4/subdir3/subsubdir3
+Most recently modified txt file: _Directory/dir4/subdir3/subsubdir3/pdPo87Upc0tmtGulk0TRbZMxpVhxax0dCcXPh6EDtoDp2W6UpGxLoFfNBfBzPW6JQFa8kJzetPptUyC7IbDNtlC0uWB53rv5LdZFcdFdJS.txt
+  File: _Directory/dir4/subdir3/subsubdir3/pdPo87Upc0tmtGulk0TRbZMxpVhxax0dCcXPh6EDtoDp2W6UpGxLoFfNBfBzPW6JQFa8kJzetPptUyC7IbDNtlC0uWB53rv5LdZFcdFdJS.txt
+  Size: 126       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 727715507   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.628687464 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 112K
+File type: bmp, Count: 1, Size: 112K
+
+File type: dat, Count: 1, Size: 112K
+
+File type: ico, Count: 3, Size: 112K
+
+File type: jpg, Count: 1, Size: 112K
+
+File type: txt, Count: 2, Size: 112K
+
+Shortest file name: mwNkf3cH.txt
+Longest file name: e0gruKEtdEUJ00U8H6VtRepXYQ2yarV6rzXhBoHUEgntD5SgNuBiOG1QVgiHWXM3M0kTny0yyMBceAdo7FbGVm16loXip9Cm70KizPXdJXYSyzYh0TzReEk3kQka.ico
+
+
+_Directory/dir4/subdir3/subsubdir4
+Most recently modified txt file: _Directory/dir4/subdir3/subsubdir4/VOvGs7Y3tiaMdKAuwNrVlTrKFBwlb6jhXnkYJRGT49VZWMb35GUsKK76YmmjsPZKAieAmw7VCaxjdZc4SkJURO0usdqCSIq.txt
+  File: _Directory/dir4/subdir3/subsubdir4/VOvGs7Y3tiaMdKAuwNrVlTrKFBwlb6jhXnkYJRGT49VZWMb35GUsKK76YmmjsPZKAieAmw7VCaxjdZc4SkJURO0usdqCSIq.txt
+  Size: 4         	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 729813847   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.628687464 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 160K
+File type: dat, Count: 2, Size: 160K
+
+File type: ico, Count: 1, Size: 160K
+
+File type: jpg, Count: 1, Size: 160K
+
+File type: png, Count: 2, Size: 160K
+
+File type: txt, Count: 2, Size: 160K
+
+Shortest file name: 8f6qWkQWC0fxnxIiZb9gjgS31397Q.dat
+Longest file name: w6T9BEu0dYB91VUYTwbhs57VMHFnYt1zqqFl4ioBySzCWyJGZ8q1HFmDGqI9WlFkw13pUE5wqZelh1RUBzf3dQ3dh1iDoVg1mgIYpN0lvvx0s6gubSq.png
+
+
+_Directory/dir4/subdir4
+Most recently modified txt file: _Directory/dir4/subdir4/subsubdir2/f0fl53fqrGvyMdND4APWXu96yyGY3xBp1YLv5TCZNn2A987QNgkeFD4qxI7eHCrTtGbbYdELkXKNzEcS9Y4TDpYjnDUhHMgWSWxbdduxzNdNjk8gT.txt
+  File: _Directory/dir4/subdir4/subsubdir2/f0fl53fqrGvyMdND4APWXu96yyGY3xBp1YLv5TCZNn2A987QNgkeFD4qxI7eHCrTtGbbYdELkXKNzEcS9Y4TDpYjnDUhHMgWSWxbdduxzNdNjk8gT.txt
+  Size: 159       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 736115448   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.632687461 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 776K
+File type: bmp, Count: 4, Size: 776K
+
+File type: dat, Count: 2, Size: 776K
+
+File type: ico, Count: 1, Size: 776K
+
+File type: jpg, Count: 5, Size: 776K
+
+File type: png, Count: 4, Size: 776K
+
+File type: txt, Count: 4, Size: 776K
+
+Shortest file name: jIjJAuHB2IE593.bmp
+Longest file name: f0fl53fqrGvyMdND4APWXu96yyGY3xBp1YLv5TCZNn2A987QNgkeFD4qxI7eHCrTtGbbYdELkXKNzEcS9Y4TDpYjnDUhHMgWSWxbdduxzNdNjk8gT.txt
+
+
+_Directory/dir4/subdir4/subsubdir1
+Most recently modified txt file: _Directory/dir4/subdir4/subsubdir1/KRN089pguHoGj3T9kkzBkdGApHY13efqREhQTiwpk75e5PzUvF1pahrWm6Zq5rbmzFenk9rIE26ttv0vpyY.txt
+  File: _Directory/dir4/subdir4/subsubdir1/KRN089pguHoGj3T9kkzBkdGApHY13efqREhQTiwpk75e5PzUvF1pahrWm6Zq5rbmzFenk9rIE26ttv0vpyY.txt
+  Size: 149       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 734021066   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.628687464 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 344K
+File type: bmp, Count: 3, Size: 344K
+
+File type: dat, Count: 1, Size: 344K
+
+File type: jpg, Count: 2, Size: 344K
+
+File type: png, Count: 1, Size: 344K
+
+File type: txt, Count: 1, Size: 344K
+
+Shortest file name: jIjJAuHB2IE593.bmp
+Longest file name: KRN089pguHoGj3T9kkzBkdGApHY13efqREhQTiwpk75e5PzUvF1pahrWm6Zq5rbmzFenk9rIE26ttv0vpyY.txt
+
+
+_Directory/dir4/subdir4/subsubdir2
+Most recently modified txt file: _Directory/dir4/subdir4/subsubdir2/f0fl53fqrGvyMdND4APWXu96yyGY3xBp1YLv5TCZNn2A987QNgkeFD4qxI7eHCrTtGbbYdELkXKNzEcS9Y4TDpYjnDUhHMgWSWxbdduxzNdNjk8gT.txt
+  File: _Directory/dir4/subdir4/subsubdir2/f0fl53fqrGvyMdND4APWXu96yyGY3xBp1YLv5TCZNn2A987QNgkeFD4qxI7eHCrTtGbbYdELkXKNzEcS9Y4TDpYjnDUhHMgWSWxbdduxzNdNjk8gT.txt
+  Size: 159       	Blocks: 8          IO Block: 4096   regular file
+Device: fd01h/64769d	Inode: 736115448   Links: 1
+Access: (0644/-rw-r--r--)  Uid: (33333/  gitpod)   Gid: (33333/  gitpod)
+Access: 2023-03-12 19:44:33.632687461 +0000
+Modify: 2023-02-09 21:58:37.000000000 +0000
+Change: 2023-03-12 19:44:33.912687217 +0000
+ Birth: -
+
+Total space used: 308K
+File type: ico, Count: 1, Size: 308K
+
+File type: jpg, Count: 3, Size: 308K
+
+File type: png, Count: 1, Size: 308K
+
+File type: txt, Count: 3, Size: 308K
+
+Shortest file name: I8dgUnSZT21x87FsrQRcnlGazbW.jpg
+Longest file name: f0fl53fqrGvyMdND4APWXu96yyGY3xBp1YLv5TCZNn2A987QNgkeFD4qxI7eHCrTtGbbYdELkXKNzEcS9Y4TDpYjnDUhHMgWSWxbdduxzNdNjk8gT.txt
+
+
+_Directory/dir4/subdir4/subsubdir3
+Total space used: 124K
+File type: bmp, Count: 1, Size: 124K
+
+File type: dat, Count: 1, Size: 124K
+
+File type: png, Count: 2, Size: 124K
+
+Shortest file name: v0hBrTiccKZFGNeWNmHalfU3G.png
+Longest file name: QJPRkDFgLfy0TkAGjfEt2kzD6pPySzLL8NyAtSJ1IbmysQT1uf7UwOBrNZA6ApPcWjo7tUbJp6QvJ21C.bmp
+
+
+_Directory/dir4/subdir4/subsubdir4
+Total space used: 0
+Shortest file name: 
+Longest file name: 

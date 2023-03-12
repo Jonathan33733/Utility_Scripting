@@ -101,8 +101,9 @@ function uuid5_textfile(){
 }
 
 function folder_content() {
+  local dir_name="$1"
   # List all files in the _Directory directory
-  files=$(ls -R _Directory/*)
+  files=$(ls -R ${folder_name}/*)
 
   # Loops through all subdirectories in _Directory
   for subdir in $(echo "$files" | grep ":$" | sed 's/://' | sort -u); do
@@ -147,10 +148,27 @@ function folder_content() {
   done
 }
 
+function log_folder_content() {
+  local folder_name="$1"
+  local log_file_name="log_${folder_name}.txt"
+
+  if [[ -f "$log_file_name" ]]; then
+    count=1
+    while [[ -f "${log_file_name%.*}${count}.txt" ]]; do
+      ((count++))
+    done
+    log_file_name="${log_file_name%.*}${count}.txt"
+  fi
+
+  local log="$(folder_content "$folder_name")"
+
+  echo "$log" > "$log_file_name"
+}
 function argument() {
-  #-fc is the stands for folder content
-  if [[ "$1" == "-fc" ]]; then
-    folder_content
+  #-fc is the stands for directory content
+  #-f stands for the directory
+  if [[ "$1" == "-fc" && "$2" == "-f" && -f "$3" ]]; then
+    folder_content "$3"
   #-v4 is for version 4 uuid
   elif [[ "$1" == "-v4" ]]; then
     uuid4_textfile
@@ -163,8 +181,46 @@ function argument() {
   fi
 }
 
-if [[ $# -ne 1 && $# -ne 2 && $# -ne 3 ]]; then
-  echo "Usage: $0 [-v4|-v5 -n word|-fc]"
+
+function argument() {
+  local cmd="$1"
+  local folder_name="$2"
+  local word="$3"
+
+  case "$cmd" in
+  #-fc is the stands for directory content
+    "-fc")
+      if [[ -n "$folder_name" && -d "$folder_name" ]]; then
+        log_folder_content "$folder_name"
+        folder_content
+      else
+        echo "Error: Folder name is missing or invalid."
+        echo "Usage: ./uuid -fc <folder_name>"
+      fi
+      ;;
+      #-v4 is for version 4 uuid
+    "-v4")
+      uuid4_textfile
+      ;;
+      #-v5 is for version 5 uuid and -n is to input a whatever the word is
+    "-v5")
+      if [[ -n "$word" ]]; then
+        uuid5_textfile "$word"
+      else
+        echo "Error: Word is missing."
+        echo "Usage: ./uuid -v5 -n <word>"
+      fi
+      ;;
+    *)
+      echo "Invalid command: $cmd"
+      echo "Usage: ./uuid [-fc <folder_name> | -v4 | -v5 -n <word>]"
+      ;;
+  esac
+}
+
+if [[ $# -lt 1 || $# -gt 4 ]]; then
+  echo "Invalid number of arguments."
+  echo "Usage: ./uuid [-fc <folder_name> | -v4 | -v5 -n <word>]"
   exit 1
 fi
 
