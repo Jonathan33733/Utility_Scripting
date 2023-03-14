@@ -1,0 +1,3 @@
+./uuid.sh -v4
+./uuid.sh -v5 -n [word]
+./uuid.sh -fc <folder_name>

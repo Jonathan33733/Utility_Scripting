@@ -48,7 +48,7 @@ function generate_v4() {
 }
 
 function generate_v5() {
-  # NameSpace_DNS: {6ba7b810-9dad-11d1-80b4-00c04fd430c8} 
+  # NameSpace_DNS: {6ba7b810-9dad-11d1-80b4-00c04fd430c8} got it from a site
   # https://stackoverflow.com/questions/10867405/generating-v5-uuid-what-is-name-and-namespace#:~:text=to%20be%20given.-,The%20namespace%20is%20either%20a%20UUID%20in%20string%20representation%20or,a%20string%20of%20arbitrary%20length.&text=The%20name%20is%20a%20string%20of%20arbitrary%20length.,-The%20name%20is
   local namespace="6ba7b810-9dad-11d1-80b4-00c04fd430c8"
   # Have this so its not the name word all the time
@@ -101,27 +101,29 @@ function uuid5_textfile(){
 }
 
 function folder_content() {
+  # Get the PID of the script
+  script_pid=$$
   local dir_name="$1"
   # List all files in the _Directory directory
   files=$(ls -R ${folder_name}/*)
 
   # Loops through all subdirectories in _Directory
   for subdir in $(echo "$files" | grep ":$" | sed 's/://' | sort -u); do
-    echo "$subdir"
+    echo "$subdir (PID: $!) (parent PID: $script_pid)"
 
     # Find the most recently modified file of this type and display its details
     recent_file=$(find "$subdir" -type f -name "*.$type" -printf "%T+ %p\n" | sort -nr | head -1 | cut -d' ' -f2-)
     if [ -n "$recent_file" ]; then
       # Use stat to display details of the most recently modified file
       stat_output=$(stat "$recent_file")
-      echo "Most recently modified $type file: $recent_file"
-      echo "$stat_output"
+      echo "Most recently modified $type file: $recent_file (PID: $!) (parent PID: $script_pid)"
+      echo "$stat_output (PID: $!) (parent PID: $script_pid)"
       echo ""
     fi
 
     # Find the total size used in the current subdirectory
     size=$(du -hs "$subdir" | awk '{ print $1 }')
-    echo "Total space used: $size"
+    echo "Total space used: $size (PID: $!) (parent PID: $script_pid)"
 
     # Find the file types and their sizes in the current subdirectory
     #"sed 's/.*.//'" which replaces everything up to and including the last dot in each filename with an empty string. This effectively extracts the file extension from each filename.
@@ -133,15 +135,15 @@ function folder_content() {
     # Counts the number of files of that type
     # "-type f" specifies that we are looking for regular files
       count=$(find "$subdir" -type f -name "*.$type" | wc -l)
-      echo "File type: $type, Count: $count, Size: $size"
+      echo "File type: $type, Count: $count, Size: $size (PID: $!) (parent PID: $script_pid)"
       echo ""
     done
 
     # Finds the shortest and longest file name in each subdirectory
     shortest=$(find "$subdir" -type f -printf '%f\n' | awk '{ print length, $0 }' | sort -n | head -n1 | awk '{ print $2 }')
     longest=$(find "$subdir" -type f -printf '%f\n' | awk '{ print length, $0 }' | sort -n | tail -n1 | awk '{ print $2 }')
-    echo "Shortest file name: $shortest"
-    echo "Longest file name: $longest"
+    echo "Shortest file name: $shortest (PID: $!) (parent PID: $script_pid)"
+    echo "Longest file name: $longest (PID: $!) (parent PID: $script_pid)"
     echo ""
     echo ""
 
@@ -181,6 +183,34 @@ function argument() {
   fi
 }
 
+function log_activity() {
+  local user=$(whoami)
+  local argument_command="$1"
+  local command="${BASH_SOURCE[0]}${argument_command}"
+  local timestamp=$(date "+%Y-%m-%d %H:%M:%S")
+  local log_file="log_activity.log"
+  local PID=""
+
+  # check if log file exists
+  if [ ! -f "${log_file}" ]; then
+    touch "${log_file}"
+  fi
+
+  # append activity information to log file
+  echo "${timestamp} ${user} ran command: ${command} (PID: $!)" >> "${log_file}"
+}
+
+function PID_log_file() {
+  local pid="$1"
+  local log_file="log_pid.log"
+
+  if [[ -f "$log_file" ]]; then
+    "$pid" >> "$log_file"
+  else
+    touch "$log_file"
+    "$pid" >> "$log_file"
+  fi
+}
 
 function argument() {
   local cmd="$1"
@@ -193,6 +223,7 @@ function argument() {
       if [[ -n "$folder_name" && -d "$folder_name" ]]; then
         log_folder_content "$folder_name"
         folder_content
+        log_activity " -fc $folder_name"
       else
         echo "Error: Folder name is missing or invalid."
         echo "Usage: ./uuid -fc <folder_name>"
@@ -201,11 +232,13 @@ function argument() {
       #-v4 is for version 4 uuid
     "-v4")
       uuid4_textfile
+      log_activity " -v4"
       ;;
       #-v5 is for version 5 uuid and -n is to input a whatever the word is
     "-v5")
       if [[ -n "$word" ]]; then
         uuid5_textfile "$word"
+        log_activity " -v5 -n $word"
       else
         echo "Error: Word is missing."
         echo "Usage: ./uuid -v5 -n <word>"
