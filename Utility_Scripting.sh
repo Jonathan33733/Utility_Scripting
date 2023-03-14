@@ -5,7 +5,6 @@ function generate_v4() {
   local updateUuid=""
   local byte7=""
   local byte9=""
-  local PID="$$" # Store the PID of the script
   #List from the hexadecimal table
   local hex_digits=(0 1 2 3 4 5 6 7 8 9 a b c d e f)
 
@@ -31,9 +30,10 @@ function generate_v4() {
       i=$((i+1))
     # This goes through same for the 9th byte
     elif [[ $i == 15 ]]; then
-    # It adds this - because couldn't figure out why the calucaltions were wrong when not adding this bit
+      # It adds this - because couldn't figure out why the calucaltions were wrong when not adding this bit
       updateUuid="${updateUuid}-"
     elif [[ $i == 19 ]]; then
+      #This would store the 2 bits as the 9th byte when the loop reaches to the position
       byte9="${uuid:i:1}${uuid:i+1:1}"
       byte9=$(( ( 0x${byte9} & 0x3f ) | 0x80 ))
       byte9=$(printf '%x' $byte9)
@@ -63,13 +63,20 @@ function generate_v5() {
 
 function uuid4_textfile(){
   local uuid4="$(generate_v4)"
-  # This will get store inside a txt file just for UUID if it exist remove it
+  
+  # Removes file uuid5.txt
   if [[ -f "uuid4.txt" ]]; then
     rm "uuid4.txt"
   fi
 
-  # This check if there is a  uuid5.txt
+  # This check if there is a uuid5.txt
   if [[ -f "uuid5.txt" ]]; then
+    # Check if uuid4 is the same as uuid5
+    local uuid5=$(grep "$uuid4" uuid5.txt || true)
+    if [[ -n "$uuid5" ]]; then
+      uuid4="$(generate_v4)"
+    fi
+
     # Searches for the UUID value in the "uuid5.txt" file
     if ! grep -q "${uuid4}" uuid5.txt; then
       echo "${uuid4}" >> uuid4.txt
@@ -86,12 +93,22 @@ function uuid5_textfile(){
   local name="$1"
   local uuid5="$(generate_v5 "$name")"
 
+  # Removes file uuid5.txt
   if [[ -f "uuid5.txt" ]]; then
     rm "uuid5.txt"
   fi
 
+  # This check if there is a uuid4.txt
   if [[ -f "uuid4.txt" ]]; then
+    # Searches for the UUID value in the "uuid4.txt" file
     if ! grep -q "${uuid5}" uuid4.txt; then
+      # Check if uuid5 is the same as uuid4
+      local uuid4=$(grep "$uuid5" uuid4.txt || true)
+      if [[ -n "$uuid4" ]]; then
+        name="$uuid4"
+        uuid5="$(generate_v5 "$name")"
+      fi
+
       echo "${uuid5}" >> uuid5.txt
       echo "${uuid5}"
     fi
@@ -123,18 +140,24 @@ function folder_content() {
     fi
 
     # Find the total size used in the current subdirectory
+    # du: This is a command that estimates file space usage.
+    #-hs: These are options for the du command. -h specifies that the output should be in human-readable format and -s specifies that the output should be a summary for the specified directory, rather than a list of individual 
+    # awk: This is a text processing tool that can be used to manipulate and analyze data in text files.
+    # '{ print $1 }': This is an awk command that selects the first field of each line of input Since the du command produces output in the format "<size> <path>", selecting the first field isolates the size information.
     size=$(du -hs "$subdir" | awk '{ print $1 }')
     echo "Total space used: $size"
 
     # Find the file types and their sizes in the current subdirectory
-    #"sed 's/.*.//'" which replaces everything up to and including the last dot in each filename with an empty string. This effectively extracts the file extension from each filename.
-    #"uniq -c"removes duplicate lines and counts the number of occurrences of each line
-    #"awk '{ print $2 }'" which prints only the second field of each line
+    # -type f: This is an option for the find command that specifies that only regular files should be selected.
+    # "sed 's/.*.//'" which replaces everything up to and including the last dot in each filename with an empty string. This effectively extracts the file extension from each filename.
+    # "uniq -c"removes duplicate lines and counts the number of occurrences of each line
+    # "awk '{ print $2 }'" which prints only the second field of each line
     types=$(find "$subdir" -type f | sed 's/.*\.//' | sort | uniq -c | awk '{ print $2 }')
     # Types is just in an example: .txt .png .jpg and ect.
     for type in $types; do
       # Counts the number of files of that type
       # "-type f" specifies that we are looking for regular files
+      # -name "*.$type": This is an option for the find command that specifies that only files with names that match the given pattern should be selected
       count=$(find "$subdir" -type f -name "*.$type" | wc -l)
       # Use "find" to search for files of the specified type in the current subdirectory
       # "-type f" specifies that we are looking for regular files (not directories, symlinks, etc.)
@@ -166,10 +189,14 @@ function folder_content() {
 }
 
 function log_folder_content() {
+  # Assign the value of folder_name to a local variable called folder_name.
   local folder_name="$1"
+  # Set the name of the log file to "log_<folder_name>.txt".
   local log_file_name="log_${folder_name}.txt"
 
+  # Check if a file with the log file name already exists.
   if [[ -f "$log_file_name" ]]; then
+    # If a file with the log file name exists, append a number to the end of the file name.
     count=1
     while [[ -f "${log_file_name%.*}${count}.txt" ]]; do
       ((count++))
@@ -177,36 +204,50 @@ function log_folder_content() {
     log_file_name="${log_file_name%.*}${count}.txt"
   fi
 
+  # Call the folder_content function with the specified folder name and assign the result to a local variable called log.
   local log="$(folder_content "$folder_name")"
 
+  # Write the contents of the log variable to the log file.
   echo "$log" > "$log_file_name"
 }
 
 function log_activity() {
+  # Get the current user's username
   local user=$(whoami)
+  # Get the argument passed to the function and store it in a variable
   local argument_command="$1"
+  # Combine the name of the current script file with the argument command and store it in a variable
   local command="${BASH_SOURCE[0]}${argument_command}"
+  # Get the current timestamp and store it in a variable
   local timestamp=$(date "+%Y-%m-%d %H:%M:%S")
+  # Set the name of the log file to store the activity information
   local log_file="log_activity.log"
+  # Initialize a variable to store the process IDs of the commands that are run by the current user
   local commands_PID=""
 
-  # check if log file exists
+  # Check if the log file exists; if not, create it
   if [ ! -f "${log_file}" ]; then
     touch "${log_file}"
   fi
 
-  # append activity information to log file
+  # Append the activity information to the log file
   echo "${timestamp} ${user} ran command: ${command}" >> "${log_file}"
+  # Get the process IDs of the commands that are run by the current user
   commands_PID=$(pgrep -f "$user")
+  # Call the PID_log_file function to append the process ID information to the log file
   PID_log_file "$commands_PID"
 }
 
 function PID_log_file() {
+  # The PID log to append.
   local pid_log="$1"
+  # The name of the log file.
   local log_file="log_pid.log"
 
+  # If the log file already exists, append the PID log to it.
   if [[ -f "$log_file" ]]; then
     echo "$pid_log" >> "$log_file"
+    # If the log file does not exist, create it and append the PID log to it.
   else
     touch "$log_file"
     echo "$pid_log" >> "$log_file"
@@ -217,18 +258,22 @@ function argument() {
   local cmd="$1"
   local folder_name="$2"
   local word="$3"
-  local PID="$$" # Store the PID of the script
+  # Store the PID of the script
+  local PID="$$"
 
+  # Use a case statement to determine which command was specified.
   case "$cmd" in
   #-fc is the stands for directory content
     "-fc")
       if [[ -n "$folder_name" && -d "$folder_name" ]]; then
+        # Log the command and PID to a file.
         PID_log_file "-fc \"$folder_name\""
         PID_log_file "$PID"
+        # Log the activity to a file.
         log_activity " -fc \"$folder_name\""
+        # Show the contents of the specified folder.
         log_folder_content "$folder_name"
         folder_content "$folder_name"
-
       else
         echo "Error: Folder name is missing or invalid."
         echo "Usage: ./uuid -fc <folder_name>"
@@ -236,23 +281,30 @@ function argument() {
       ;;
       #-v4 is for version 4 uuid
     "-v4")
+      # Log the command and PID to a file.
       PID_log_file "-v4"
       PID_log_file "$PID"
+      # Generate a version 4 UUID and write it to a text file.
       uuid4_textfile
+      # Log the activity to a file.
       log_activity " -v4"
       ;;
       #-v5 is for version 5 uuid and -n is to input a whatever the word is
     "-v5")
       if [[ -n "$word" ]]; then
+        # Log the command and PID to a file.
         PID_log_file "-v5 -n \"$word\""
         PID_log_file "$PID"
+        # Generate a version 5 UUID with the specified word and write it to a text file.
         uuid5_textfile "$word"
+        # Log the activity to a file.
         log_activity " -v5 -n \"$word\""
       else
         echo "Error: Word is missing."
         echo "Usage: ./uuid -v5 -n <word>"
       fi
       ;;
+      # If the command is anything else, print an error message and usage instructions.
     *)
       echo "Invalid command: $cmd"
       echo "Usage: ./uuid [-fc <folder_name> | -v4 | -v5 -n <word>]"
@@ -260,10 +312,13 @@ function argument() {
   esac
 }
 
+# Check the number of command-line arguments.
 if [[ $# -lt 1 || $# -gt 4 ]]; then
   echo "Invalid number of arguments."
   echo "Usage: ./uuid [-fc <folder_name> | -v4 | -v5 -n <word>]"
   exit 1
 fi
 
+
+# Call the argument function with the command-line arguments.
 argument "$@"

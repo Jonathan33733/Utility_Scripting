@@ -1,0 +1,145 @@
+.TH man "1.0" "Utility Scripting"
+
+.SH NAME
+Utility_Scripting.sh - a utility script for generating UUIDs and analyzing folder contents
+
+.SH SYNOPSIS
+.B Utility_Scripting.sh
+[\fB-fc\fR \fI<folder_name>\fR | \fB-v4\fR | \fB-v5\fR \fI-n \fR\fI<word>\fR]
+
+.SH DESCRIPTION
+The Utility Scripting Bash script generates UUIDs and analyzes file system data. It supports three commands:
+
+.TP
+.B -fc \fI<folder_name>\fR
+Generates a report on the contents of the specified folder.
+
+.TP
+.B -v4
+Generates a random Version 4 UUID and saves it to a text file.
+
+.TP
+.B -v5 \fI-n \fR\fI<word>\fR
+Generates a Version 5 UUID based on a given word and saves it to a text file.
+
+.SH FUNCTIONS
+Utility_Scripting.sh is a script for generating UUIDs and analyzing folder contents. The following options are available:
+
+.IP "-v4"
+Generate a random Version 4 UUID and print it to the console.
+
+.IP "-v5"
+Generate a Version 5 UUID based on a given name and print it to the console.
+
+.IP "-n [name]"
+Specify a name for the Version 5 UUID generation. This option must be used in conjunction with the "-v5" option.
+
+.IP "-fc <folder_name>"
+Analyze the contents of the specified folder and print the results to the console.
+
+.SH FILES
+.TP
+\fBuuid4.txt\fR
+A text file containing Version 4 UUIDs.
+
+.TP
+\fBuuid5.txt\fR
+A text file containing Version 5 UUIDs.
+
+.TP
+\fBlog_activity.log\fR
+A log file containing information about activity.
+
+.TP
+\fBlog_pid.log\fR
+A log file containing the PID of a command.
+
+.SH FUNCTIONS
+The following functions are defined in the script:
+
+.TP
+\fBgenerate_v4\fR
+This function generates a random Version 4 UUID.
+
+.TP
+\fBgenerate_v5\fR
+This function generates a Version 5 UUID based on a given name.
+
+.TP
+\fBuuid4_textfile\fR
+This function generates a random Version 4 UUID and writes it to the "uuid4.txt" file.
+
+.TP
+\fBuuid5_textfile\fR
+This function generates a Version 5 UUID based on a given name and writes it to the "uuid5.txt" file.
+
+.TP
+\fBfolder_content\fR
+This function analyzes the contents of a specified folder and prints the results to the console.
+
+.TP
+\fBlog_folder_content\fR
+This function analyzes the contents of a specified folder and writes the results to a log file.
+
+.TP
+\fBlog_activity\fR
+This function logs activity information to a log file.
+
+.TP
+\fBPID_log_file\fR
+This function writes the PID of a command to a log file.
+
+.SH OPTIONS
+.TP
+.B -fc
+Generates a report on the contents of the specified folder.
+
+.TP
+.B -v4
+Generates a random Version 4 UUID and saves it to a text file.
+
+.TP
+.B -v5
+Generates a Version 5 UUID based on a given word and saves it to a text file.
+
+.TP
+.B -n
+Specifies the word to use when generating a Version 5 UUID.
+
+.SH FILES
+The following files are used in the Utility Scripting:
+
+.TP
+uuid4.txt
+A text file containing Version 4 UUIDs.
+
+.TP
+uuid5.txt
+A text file containing Version 5 UUIDs.
+
+.TP
+log_activity.log
+A log file containing information about activity.
+
+.TP
+log_pid.log
+A log file containing the PID of a command.
+
+.SH EXAMPLES
+Generate a random Version 4 UUID and save it to a text file:
+.P
+.B Utility_Scripting.sh -v4
+
+Generate a Version 5 UUID based on the word "example" and save it to a text file:
+.P
+.B Utility_Scripting.sh -v5 -n example
+
+Generate a report on the contents of the folder "Documents":
+.P
+.B Utility_Scripting.sh -fc Documents
+
+.SH SEE ALSO
+uuidgen(1), sha1sum(1), awk(1), sed(1), cut(1), find(1), stat(1), du(1), sort(1), uniq(1), numfmt(1), whoami(1), date(1), pgrep(1).
+
+.SH BUGS
+Report bugs to [Your Email].

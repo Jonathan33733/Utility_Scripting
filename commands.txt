@@ -1,3 +1,4 @@
 ./Utility_Scripting.sh -v4
 ./Utility_Scripting.sh -v5 -n [word]
 ./Utility_Scripting.sh -fc <folder_name>
+man -l Utility_Scripting.1.gz
