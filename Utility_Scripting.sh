@@ -5,6 +5,7 @@ function generate_v4() {
   local updateUuid=""
   local byte7=""
   local byte9=""
+  local PID="$$" # Store the PID of the script
   #List from the hexadecimal table
   local hex_digits=(0 1 2 3 4 5 6 7 8 9 a b c d e f)
 
@@ -101,29 +102,29 @@ function uuid5_textfile(){
 }
 
 function folder_content() {
-  # Get the PID of the script
-  script_pid=$$
+  # The commands_PID Store the PID of the shell script commands
+  local commands_PID=""
   local dir_name="$1"
   # List all files in the _Directory directory
   files=$(ls -R ${folder_name}/*)
 
   # Loops through all subdirectories in _Directory
   for subdir in $(echo "$files" | grep ":$" | sed 's/://' | sort -u); do
-    echo "$subdir (PID: $!) (parent PID: $script_pid)"
+    echo "$subdir"
 
     # Find the most recently modified file of this type and display its details
     recent_file=$(find "$subdir" -type f -name "*.$type" -printf "%T+ %p\n" | sort -nr | head -1 | cut -d' ' -f2-)
     if [ -n "$recent_file" ]; then
       # Use stat to display details of the most recently modified file
       stat_output=$(stat "$recent_file")
-      echo "Most recently modified $type file: $recent_file (PID: $!) (parent PID: $script_pid)"
-      echo "$stat_output (PID: $!) (parent PID: $script_pid)"
+      echo "Most recently modified $type file: $recent_file"
+      echo "$stat_output"
       echo ""
     fi
 
     # Find the total size used in the current subdirectory
     size=$(du -hs "$subdir" | awk '{ print $1 }')
-    echo "Total space used: $size (PID: $!) (parent PID: $script_pid)"
+    echo "Total space used: $size"
 
     # Find the file types and their sizes in the current subdirectory
     #"sed 's/.*.//'" which replaces everything up to and including the last dot in each filename with an empty string. This effectively extracts the file extension from each filename.
@@ -132,22 +133,36 @@ function folder_content() {
     types=$(find "$subdir" -type f | sed 's/.*\.//' | sort | uniq -c | awk '{ print $2 }')
     # Types is just in an example: .txt .png .jpg and ect.
     for type in $types; do
-    # Counts the number of files of that type
-    # "-type f" specifies that we are looking for regular files
+      # Counts the number of files of that type
+      # "-type f" specifies that we are looking for regular files
       count=$(find "$subdir" -type f -name "*.$type" | wc -l)
-      echo "File type: $type, Count: $count, Size: $size (PID: $!) (parent PID: $script_pid)"
+      # Use "find" to search for files of the specified type in the current subdirectory
+      # "-type f" specifies that we are looking for regular files (not directories, symlinks, etc.)
+      # "-name "*.$type"" specifies that we are looking for files with names that end in ".$type"
+      # "-exec stat --format="%s" {} +" tells "find" to execute the "stat" command on each file it finds and output the file size in bytes (using the "%s" format specifier)
+      # The output of "find" and "stat" is piped to "awk", which adds up all the file sizes and prints the total
+      size=$(find "$subdir" -type f -name "*.$type" -exec stat --format="%s" {} + | awk '{s+=$1} END {print s}')
+      # Use "numfmt" to convert the file size from bytes to a human-readable format with units (e.g., KB, MB, GB)
+      # "--to=iec-i" specifies the format of the output (using IEC binary prefixes)
+      # "--suffix=B" specifies that the units should be "B" (i.e., bytes)
+      size_with_units=$(numfmt --to=iec-i --suffix=B "$size")
+      echo "File type: $type, Count: $count, Size: $size_with_units"
+      commands_PID=$(pgrep -f "$count")
+      PID_log_file "$commands_PID"
       echo ""
+
     done
 
     # Finds the shortest and longest file name in each subdirectory
     shortest=$(find "$subdir" -type f -printf '%f\n' | awk '{ print length, $0 }' | sort -n | head -n1 | awk '{ print $2 }')
     longest=$(find "$subdir" -type f -printf '%f\n' | awk '{ print length, $0 }' | sort -n | tail -n1 | awk '{ print $2 }')
-    echo "Shortest file name: $shortest (PID: $!) (parent PID: $script_pid)"
-    echo "Longest file name: $longest (PID: $!) (parent PID: $script_pid)"
+    echo "Shortest file name: $shortest"
+    echo "Longest file name: $longest"
     echo ""
     echo ""
 
   done
+
 }
 
 function log_folder_content() {
@@ -166,22 +181,6 @@ function log_folder_content() {
 
   echo "$log" > "$log_file_name"
 }
-function argument() {
-  #-fc is the stands for directory content
-  #-f stands for the directory
-  if [[ "$1" == "-fc" && "$2" == "-f" && -f "$3" ]]; then
-    folder_content "$3"
-  #-v4 is for version 4 uuid
-  elif [[ "$1" == "-v4" ]]; then
-    uuid4_textfile
-  #-v5 is for version 5 uuid and -n is to input a whatever the word is
-  elif [[ "$1" == "-v5" && "$2" == "-n" && -n "$3" ]]; then
-    uuid5_textfile "$3"
-  else
-    echo "Invalid arguments specified. Please use -fc, -v4, or -v5 -n [word]."
-    return 1
-  fi
-}
 
 function log_activity() {
   local user=$(whoami)
@@ -189,7 +188,7 @@ function log_activity() {
   local command="${BASH_SOURCE[0]}${argument_command}"
   local timestamp=$(date "+%Y-%m-%d %H:%M:%S")
   local log_file="log_activity.log"
-  local PID=""
+  local commands_PID=""
 
   # check if log file exists
   if [ ! -f "${log_file}" ]; then
@@ -197,18 +196,20 @@ function log_activity() {
   fi
 
   # append activity information to log file
-  echo "${timestamp} ${user} ran command: ${command} (PID: $!)" >> "${log_file}"
+  echo "${timestamp} ${user} ran command: ${command}" >> "${log_file}"
+  commands_PID=$(pgrep -f "$user")
+  PID_log_file "$commands_PID"
 }
 
 function PID_log_file() {
-  local pid="$1"
+  local pid_log="$1"
   local log_file="log_pid.log"
 
   if [[ -f "$log_file" ]]; then
-    "$pid" >> "$log_file"
+    echo "$pid_log" >> "$log_file"
   else
     touch "$log_file"
-    "$pid" >> "$log_file"
+    echo "$pid_log" >> "$log_file"
   fi
 }
 
@@ -216,14 +217,18 @@ function argument() {
   local cmd="$1"
   local folder_name="$2"
   local word="$3"
+  local PID="$$" # Store the PID of the script
 
   case "$cmd" in
   #-fc is the stands for directory content
     "-fc")
       if [[ -n "$folder_name" && -d "$folder_name" ]]; then
+        PID_log_file "-fc \"$folder_name\""
+        PID_log_file "$PID"
+        log_activity " -fc \"$folder_name\""
         log_folder_content "$folder_name"
-        folder_content
-        log_activity " -fc $folder_name"
+        folder_content "$folder_name"
+
       else
         echo "Error: Folder name is missing or invalid."
         echo "Usage: ./uuid -fc <folder_name>"
@@ -231,14 +236,18 @@ function argument() {
       ;;
       #-v4 is for version 4 uuid
     "-v4")
+      PID_log_file "-v4"
+      PID_log_file "$PID"
       uuid4_textfile
       log_activity " -v4"
       ;;
       #-v5 is for version 5 uuid and -n is to input a whatever the word is
     "-v5")
       if [[ -n "$word" ]]; then
+        PID_log_file "-v5 -n \"$word\""
+        PID_log_file "$PID"
         uuid5_textfile "$word"
-        log_activity " -v5 -n $word"
+        log_activity " -v5 -n \"$word\""
       else
         echo "Error: Word is missing."
         echo "Usage: ./uuid -v5 -n <word>"

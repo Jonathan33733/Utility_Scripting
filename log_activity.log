@@ -1,4 +1,2 @@
-2023-03-14 00:22:06 gitpod ran command: ./uuid.sh -fc _Directory
-2023-03-14 00:32:22 gitpod ran command: ./uuid.sh -fc _Directory
-2023-03-14 00:35:58 gitpod ran command: ./uuid.sh -fc _Directory
-2023-03-14 00:42:54 gitpod ran command: ./uuid.sh -fc _Directory (PID: )
+2023-03-14 21:08:56 gitpod ran command: ./uuid.sh -fc "_Directory"
+2023-03-14 21:37:28 gitpod ran command: ./uuid.sh -v4
