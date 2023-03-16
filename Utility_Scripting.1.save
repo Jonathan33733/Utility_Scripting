@@ -119,11 +119,11 @@ A text file containing Version 5 UUIDs.
 
 .TP
 log_activity.log
-A log file containing information about activity which are the date, time, who was it and what command was run.
+A log file containing information about activity.
 
 .TP
 log_pid.log
-A log file containing the PID, date and time of the script and command.
+A log file containing the PID of a command.
 
 .SH EXAMPLES
 Generate a random Version 4 UUID and save it to a text file:

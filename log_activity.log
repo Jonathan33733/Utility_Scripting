@@ -1,3 +1,8 @@
-2023-03-14 23:04:37 gitpod ran command: ./Utility_Scripting.sh -fc "_Directory"
-2023-03-14 23:05:13 gitpod ran command: ./Utility_Scripting.sh -v5 -n "secert"
-2023-03-14 23:05:21 gitpod ran command: ./Utility_Scripting.sh -v4
+2023-03-16 22:30:24 gitpod ran command: ./Utility_Scripting.sh -fc "_Directory"
+2023-03-16 22:35:58 gitpod ran command: ./Utility_Scripting.sh -fc "_Directory"
+2023-03-16 22:37:26 gitpod ran command: ./Utility_Scripting.sh -fc "_Directory"
+2023-03-16 22:44:24 gitpod ran command: ./Utility_Scripting.sh -v4
+2023-03-16 22:44:31 gitpod ran command: ./Utility_Scripting.sh -v4
+2023-03-16 22:44:40 gitpod ran command: ./Utility_Scripting.sh -v5 -n "secert"
+2023-03-16 22:44:45 gitpod ran command: ./Utility_Scripting.sh -v5 -n "secerts"
+2023-03-16 22:44:54 gitpod ran command: ./Utility_Scripting.sh -v5 -n "secert"

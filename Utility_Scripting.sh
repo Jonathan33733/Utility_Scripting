@@ -64,8 +64,10 @@ function generate_v5() {
 function uuid4_textfile(){
   local uuid4="$(generate_v4)"
   
-  # Removes file uuid5.txt
+  # Removes file uuid4.txt
   if [[ -f "uuid4.txt" ]]; then
+    echo "Old UUID4"
+    cat "uuid4.txt"
     rm "uuid4.txt"
   fi
 
@@ -80,10 +82,12 @@ function uuid4_textfile(){
     # Searches for the UUID value in the "uuid5.txt" file
     if ! grep -q "${uuid4}" uuid5.txt; then
       echo "${uuid4}" >> uuid4.txt
+      echo "New UUID4"
       echo "${uuid4}"
     fi
   else
     echo "${uuid4}" >> uuid4.txt
+    echo "New UUID4"
     echo "${uuid4}"
   fi
   # Same this for uuid5_textfile
@@ -95,6 +99,8 @@ function uuid5_textfile(){
 
   # Removes file uuid5.txt
   if [[ -f "uuid5.txt" ]]; then
+    echo "Old UUID5"
+    cat "uuid5.txt"
     rm "uuid5.txt"
   fi
 
@@ -110,26 +116,35 @@ function uuid5_textfile(){
       fi
 
       echo "${uuid5}" >> uuid5.txt
+      echo "New UUID5"
       echo "${uuid5}"
     fi
   else
     echo "${uuid5}" >> uuid5.txt
+    echo "New UUID5"
     echo "${uuid5}"
   fi
 }
 
 function folder_content() {
+  local timestamp=$(date "+%Y-%m-%d %H:%M:%S")
   # The commands_PID Store the PID of the shell script commands
   local commands_PID=""
   local dir_name="$1"
   # List all files in the _Directory directory
   files=$(ls -R ${folder_name}/*)
 
+  # Find all files in the specified directory and their sizes
+  files_dir=$(find "$dir_name" -type f -printf "%s %f\n")
+
   # Loops through all subdirectories in _Directory
   for subdir in $(echo "$files" | grep ":$" | sed 's/://' | sort -u); do
     echo "$subdir"
 
     # Find the most recently modified file of this type and display its details
+    # find "$subdir" -type f -name "*.$type": This command searches for regular files in the specified subdirectory that have a file name ending in the specified file type
+    # -printf "%T+ %p\n": This command specifies the output format for each file that is found. %T+ tells find to output the modification time of the file in the format YYYY-MM-DDTHH:MM:SS.ssssss[±ZZ:ZZ], where the T separates the date and time, and the optional ±ZZ:ZZ specifies the time zone offset from UTC. %p tells find to output the full path of the file. 
+    #| cut -d' ' -f2-: removes the modification time from the output by selecting only the second field and everything after it
     recent_file=$(find "$subdir" -type f -name "*.$type" -printf "%T+ %p\n" | sort -nr | head -1 | cut -d' ' -f2-)
     if [ -n "$recent_file" ]; then
       # Use stat to display details of the most recently modified file
@@ -171,7 +186,7 @@ function folder_content() {
       size_with_units=$(numfmt --to=iec-i --suffix=B "$size")
       echo "File type: $type, Count: $count, Size: $size_with_units"
       commands_PID=$(pgrep -f "$count")
-      PID_log_file "$commands_PID"
+      PID_log_file "(PID: $commands_PID)[${timestamp}] Count: $count"
       echo ""
 
     done
@@ -235,7 +250,7 @@ function log_activity() {
   # Get the process IDs of the commands that are run by the current user
   commands_PID=$(pgrep -f "$user")
   # Call the PID_log_file function to append the process ID information to the log file
-  PID_log_file "$commands_PID"
+  PID_log_file "(PID: $commands_PID)[${timestamp}] ${user}"
 }
 
 function PID_log_file() {
@@ -258,6 +273,7 @@ function argument() {
   local cmd="$1"
   local folder_name="$2"
   local word="$3"
+  local timestamp=$(date "+%Y-%m-%d %H:%M:%S")
   # Store the PID of the script
   local PID="$$"
 
@@ -268,7 +284,7 @@ function argument() {
       if [[ -n "$folder_name" && -d "$folder_name" ]]; then
         # Log the command and PID to a file.
         PID_log_file "-fc \"$folder_name\""
-        PID_log_file "$PID"
+        PID_log_file "(PID: $PID)[${timestamp}] script"
         # Log the activity to a file.
         log_activity " -fc \"$folder_name\""
         # Show the contents of the specified folder.
@@ -283,7 +299,7 @@ function argument() {
     "-v4")
       # Log the command and PID to a file.
       PID_log_file "-v4"
-      PID_log_file "$PID"
+      PID_log_file "(PID: $PID)[${timestamp}] script"
       # Generate a version 4 UUID and write it to a text file.
       uuid4_textfile
       # Log the activity to a file.
@@ -294,7 +310,7 @@ function argument() {
       if [[ -n "$word" ]]; then
         # Log the command and PID to a file.
         PID_log_file "-v5 -n \"$word\""
-        PID_log_file "$PID"
+        PID_log_file "(PID: $PID)[${timestamp}] script"
         # Generate a version 5 UUID with the specified word and write it to a text file.
         uuid5_textfile "$word"
         # Log the activity to a file.
@@ -307,7 +323,7 @@ function argument() {
       # If the command is anything else, print an error message and usage instructions.
     *)
       echo "Invalid command: $cmd"
-      echo "Usage: ./uuid [-fc <folder_name> | -v4 | -v5 -n <word>]"
+      echo "Usage: ./Utility_Scripting [-fc <folder_name> | -v4 | -v5 -n <word>]"
       ;;
   esac
 }
@@ -315,7 +331,7 @@ function argument() {
 # Check the number of command-line arguments.
 if [[ $# -lt 1 || $# -gt 4 ]]; then
   echo "Invalid number of arguments."
-  echo "Usage: ./uuid [-fc <folder_name> | -v4 | -v5 -n <word>]"
+  echo "Usage: ./Utility_Scripting [-fc <folder_name> | -v4 | -v5 -n <word>]"
   exit 1
 fi
 
