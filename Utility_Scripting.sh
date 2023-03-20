@@ -138,6 +138,8 @@ function folder_content() {
   files=$(ls -R ${folder_name}/*)
 
   # Find all files in the specified directory and their sizes
+  # %s specifier displays the file size
+  # %f displays the filename without any directory components
   files_dir=$(find "$dir_name" -type f -printf "%s %f\n")
 
   # Loops through all subdirectories in _Directory
@@ -146,8 +148,8 @@ function folder_content() {
 
     # Find the most recently modified file of this type and display its details
     # find "$subdir" -type f -name "*.$type": This command searches for regular files in the specified subdirectory that have a file name ending in the specified file type
-    # -printf "%T+ %p\n": This command specifies the output format for each file that is found. %T+ tells find to output the modification time of the file in the format YYYY-MM-DDTHH:MM:SS.ssssss[±ZZ:ZZ], where the T separates the date and time, and the optional ±ZZ:ZZ specifies the time zone offset from UTC. %p tells find to output the full path of the file. 
-    #| cut -d' ' -f2-: removes the modification time from the output by selecting only the second field and everything after it
+    # -printf "%T+ %p\n" This command specifies the output format for each file that is found. %T+ tells find to output the modification time of the file in the format YYYY-MM-DDTHH:MM:SS.ssssss[±ZZ:ZZ], where the T separates the date and time, and the optional ±ZZ:ZZ specifies the time zone offset from UTC. %p tells find to output the full path of the file. 
+    #| cut -d' ' -f2- removes the modification time from the output by selecting only the second field and everything after it
     recent_file=$(find "$subdir" -type f -name "*.$type" -printf "%T+ %p\n" | sort -nr | head -1 | cut -d' ' -f2-)
     if [ -n "$recent_file" ]; then
       # Use stat to display details of the most recently modified file
@@ -158,15 +160,15 @@ function folder_content() {
     fi
 
     # Find the total size used in the current subdirectory
-    # du: This is a command that estimates file space usage.
-    #-hs: These are options for the du command. -h specifies that the output should be in human-readable format and -s specifies that the output should be a summary for the specified directory, rather than a list of individual 
-    # awk: This is a text processing tool that can be used to manipulate and analyze data in text files.
+    # du This is a command that estimates file space usage.
+    #-hs These are options for the du command. -h specifies that the output should be in human-readable format and -s specifies that the output should be a summary for the specified directory, rather than a list of individual 
+    # awk This is a text processing tool that can be used to manipulate and analyze data in text files.
     # '{ print $1 }': This is an awk command that selects the first field of each line of input Since the du command produces output in the format "<size> <path>", selecting the first field isolates the size information.
     size=$(du -hs "$subdir" | awk '{ print $1 }')
     echo "Total space used: $size"
 
     # Find the file types and their sizes in the current subdirectory
-    # -type f: This is an option for the find command that specifies that only regular files should be selected.
+    # -type f This is an option for the find command that specifies that only regular files should be selected.
     # "sed 's/.*.//'" which replaces everything up to and including the last dot in each filename with an empty string. This effectively extracts the file extension from each filename.
     # "uniq -c"removes duplicate lines and counts the number of occurrences of each line
     # "awk '{ print $2 }'" which prints only the second field of each line
@@ -183,9 +185,9 @@ function folder_content() {
       # "-exec stat --format="%s" {} +" tells "find" to execute the "stat" command on each file it finds and output the file size in bytes (using the "%s" format specifier)
       # The output of "find" and "stat" is piped to "awk", which adds up all the file sizes and prints the total
       size=$(find "$subdir" -type f -name "*.$type" -exec stat --format="%s" {} + | awk '{s+=$1} END {print s}')
-      # Use "numfmt" to convert the file size from bytes to a human-readable format with units (e.g., KB, MB, GB)
+      # Use "numfmt" to convert the file size from bytes to a human-readable format with units
       # "--to=iec-i" specifies the format of the output (using IEC binary prefixes)
-      # "--suffix=B" specifies that the units should be "B" (i.e., bytes)
+      # "--suffix=B" specifies that the units should be "B"
       size_with_units=$(numfmt --to=iec-i --suffix=B "$size")
       echo "File type: $type, Count: $count, Size: $size_with_units"
       commands_PID=$(pgrep -f "$count")
