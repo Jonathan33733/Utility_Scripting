@@ -56,6 +56,9 @@ function generate_v5() {
   local name="$1"
   # Link the namespace and name 
   # When the sha1sum when its piped to the awk '{print $1}' it extracts the first field of the output, which is the actual hash value
+  # awk '{print $1}': This extracts the first field of the output, which is the hexadecimal representation of the SHA1 hash.
+  # sed -r 's/(.{8})(.{4})(.{4})(.{4})(.{12})/\1-\2-\3-\4-\5/g': This uses a regular expression to split the hexadecimal string into groups of 8, 4, 4, 4, and 12 characters and inserts hyphens between the groups to generate a UUID-like format.
+  # cut -c-36: This cuts the output to the first 36 characters, which is the length of a standard UUID
   local uuid="$(echo -n "${namespace}${name}" | sha1sum | awk '{print $1}' | sed -r 's/(.{8})(.{4})(.{4})(.{4})(.{12})/\1-\2-\3-\4-\5/g' | cut -c-36)"
   
   echo "${uuid}"
@@ -192,6 +195,9 @@ function folder_content() {
     done
 
     # Finds the shortest and longest file name in each subdirectory
+    # -printf '%f\n' prints only the file name and a newline character
+    # awk '{ print length, $0 }' adds the length of each file name to the beginning of the line, separated by a space
+    # awk '{ print $2 }' prints only the file name without the length
     shortest=$(find "$subdir" -type f -printf '%f\n' | awk '{ print length, $0 }' | sort -n | head -n1 | awk '{ print $2 }')
     longest=$(find "$subdir" -type f -printf '%f\n' | awk '{ print length, $0 }' | sort -n | tail -n1 | awk '{ print $2 }')
     echo "Shortest file name: $shortest"
