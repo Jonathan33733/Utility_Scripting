@@ -22,7 +22,7 @@ function generate_v4() {
   for (( i=0; i<${#uuid}; i++ )); do
     # At these point will use the bitwise AND and OR to solve the 7th byte
     if [[ $i == 14 ]]; then
-      #This would store the 2 bits as the 7th byte when the loop reaches to the position
+      # This would store the 2 bits as the 7th byte when the loop reaches to the position
       byte7="${uuid:i:1}${uuid:i+1:1}"
       byte7=$(( ( 0x${byte7} & 0x0f ) | 0x40 ))
       byte7=$(printf '%x' $byte7)
@@ -57,7 +57,7 @@ function generate_v5() {
   # Link the namespace and name 
   # When the sha1sum when its piped to the awk '{print $1}' it extracts the first field of the output, which is the actual hash value
   # awk '{print $1}': This extracts the first field of the output, which is the hexadecimal representation of the SHA1 hash.
-  # sed -r 's/(.{8})(.{4})(.{4})(.{4})(.{12})/\1-\2-\3-\4-\5/g': This uses a regular expression to split the hexadecimal string into groups of 8, 4, 4, 4, and 12 characters and inserts hyphens between the groups to generate a UUID-like format.
+  # sed -r 's/(.{8})(.{4})(.{4})(.{4})(.{12})/\1-\2-\3-\4-\5/g': This uses a regular expression to split the hexadecimal string into groups of 8, 4, 4, 4, and 12 characters and inserts -
   # cut -c-36: This cuts the output to the first 36 characters, which is the length of a standard UUID
   local uuid="$(echo -n "${namespace}${name}" | sha1sum | awk '{print $1}' | sed -r 's/(.{8})(.{4})(.{4})(.{4})(.{12})/\1-\2-\3-\4-\5/g' | cut -c-36)"
   
@@ -145,19 +145,53 @@ function folder_content() {
   # Loops through all subdirectories in _Directory
   for subdir in $(echo "$files" | grep ":$" | sed 's/://' | sort -u); do
     echo "$subdir"
-
+    
+    # Run the commands for finding the most recently modified file of the specified type in the background using a subshell and capture the output
+    # echo $BASHPID: Outputs the process ID (PID) of the current shell
+    # find "$subdir" -type f -name "*.$type" -printf "%T+ %p\n" | sort -nr | head -1 | cut -d' ' -f2-: Retrieves the most recently modified file of the specified type in the subdir
+    recent_file_and_PID=$( ( echo $BASHPID; find "$subdir" -type f -name "*.$type" -printf "%T+ %p\n" | sort -nr | head -1 | cut -d' ' -f2- ) )
+    # Get the PID of the command from the output of the subshell
+    commands_PID=$(echo "$recent_file_and_PID" | head -n 1)
+    # Get the most recently modified file of the specified type from the output of the subshell
+    recent_file=$(echo "$recent_file_and_PID" | tail -n 1)
+    # Call the PID_log_file function to log the PID and the command used to find the most recently modified file of the specified type
+    PID_log_file "(PID: $commands_PID)[${timestamp}] find \"$subdir\" -type f -name \"*.$type\" -printf \"%T+ %p\n\" | sort -nr | head -1 | cut -d' ' -f2-: $recent_file"
+    
     # Find the most recently modified file of this type and display its details
     # find "$subdir" -type f -name "*.$type": This command searches for regular files in the specified subdirectory that have a file name ending in the specified file type
     # -printf "%T+ %p\n" This command specifies the output format for each file that is found. %T+ tells find to output the modification time of the file in the format YYYY-MM-DDTHH:MM:SS.ssssss[±ZZ:ZZ], where the T separates the date and time, and the optional ±ZZ:ZZ specifies the time zone offset from UTC. %p tells find to output the full path of the file. 
     #| cut -d' ' -f2- removes the modification time from the output by selecting only the second field and everything after it
     recent_file=$(find "$subdir" -type f -name "*.$type" -printf "%T+ %p\n" | sort -nr | head -1 | cut -d' ' -f2-)
     if [ -n "$recent_file" ]; then
+    
+      # Run the commands for obtaining the stat output of the most recently modified file in the background using a subshell and capture the output
+      # echo $BASHPID: Outputs the process ID (PID) of the current shell
+      # stat "$recent_file": Retrieves the file status of the most recently modified file in the subdir
+      stat_output_and_PID=$( ( echo $BASHPID; stat "$recent_file" ) )
+      # Get the PID of the command from the output of the subshell
+      commands_PID=$(echo "$stat_output_and_PID" | head -n 1)
+      # Get the stat output of the most recently modified file from the output of the subshell
+      stat_output=$(echo "$stat_output_and_PID" | tail -n 1)
+      # Call the PID_log_file function to log the PID and the command used to get the stat output of the most recently modified file
+      PID_log_file "(PID: $commands_PID)[${timestamp}] stat \"$recent_file\": $stat_output"
       # Use stat to display details of the most recently modified file
       stat_output=$(stat "$recent_file")
       echo "Most recently modified $type file: $recent_file"
       echo "$stat_output"
       echo ""
     fi
+
+    # Run the commands for finding the total size used in the subdir in the background using a subshell and capture the output
+    # echo $BASHPID: Outputs the process ID (PID) of the current shell
+    # du -hs "$subdir": Estimates the total file space usage in the subdir in human-readable format
+    # awk '{ print $1 }': Extracts the size information from the output
+    size_and_PID=$( ( echo $BASHPID; du -hs "$subdir" | awk '{ print $1 }' ) )
+    # Get the PID of the command from the output of the subshell
+    commands_PID=$(echo "$size_and_PID" | head -n 1)
+    # Get the total size used in the subdir from the output of the subshell
+    size=$(echo "$size_and_PID" | tail -n 1)
+    # Call the PID_log_file function to log the PID and the command used to find the total size used in the subdir
+    PID_log_file "(PID: $commands_PID)[${timestamp}] du -hs \"$subdir\" | awk '{ print \$1 }': $size"
 
     # Find the total size used in the current subdirectory
     # du This is a command that estimates file space usage.
@@ -167,6 +201,19 @@ function folder_content() {
     size=$(du -hs "$subdir" | awk '{ print $1 }')
     echo "Total space used: $size"
 
+    # Run the commands for finding the file types in the subdir in the background using a subshell and capture the output
+    # echo $BASHPID: Outputs the process ID (PID) of the current shell
+    # find "$subdir" -type f: Finds all files in the subdir
+    # sed 's/.*\.//': Extracts the file extension of each file
+    # sort | uniq -c | awk '{ print $2 }': Sorts, counts occurrences, and prints the unique file types
+    types_and_PID=$( ( echo $BASHPID; find "$subdir" -type f | sed 's/.*\.//' | sort | uniq -c | awk '{ print $2 }' ) )
+    # Get the PID of the command from the output of the subshell
+    commands_PID=$(echo "$types_and_PID" | head -n 1)
+    # Get the unique file types from the output of the subshell
+    types=$(echo "$types_and_PID" | tail -n 1)
+    # Call the PID_log_file function to log the PID and the command used to find the unique file types in the subdir
+    PID_log_file "(PID: $commands_PID)[${timestamp}] find \"$subdir\" -type f | sed 's/.*\\.//' | sort | uniq -c | awk '{ print \$2 }': $types"
+
     # Find the file types and their sizes in the current subdirectory
     # -type f This is an option for the find command that specifies that only regular files should be selected.
     # "sed 's/.*.//'" which replaces everything up to and including the last dot in each filename with an empty string. This effectively extracts the file extension from each filename.
@@ -175,10 +222,40 @@ function folder_content() {
     types=$(find "$subdir" -type f | sed 's/.*\.//' | sort | uniq -c | awk '{ print $2 }')
     # Types is just in an example: .txt .png .jpg and ect.
     for type in $types; do
+
+      # Run the commands for counting the number of files of the specified type in the background using a subshell and capture the output
+      # echo $BASHPID: Outputs the process ID (PID) of the current shell
+      # find "$subdir" -type f -name "*.$type": Finds all files of the specified type in the subdir
+      # wc -l: Counts the number of lines, which represents the number of files found
+      count_and_PID=$( ( echo $BASHPID; find "$subdir" -type f -name "*.$type" | wc -l ) )
+      # Get the PID of the command from the output of the subshell
+      commands_PID=$(echo "$count_and_PID" | head -n 1)
+      # Get the count of files of the specified type from the output of the subshell
+      count=$(echo "$count_and_PID" | tail -n 1)
+      # Call the PID_log_file function to log the PID and the command used to count the number of files of the specified type
+      PID_log_file "(PID: $commands_PID)[${timestamp}] find \"$subdir\" -type f -name \"*.$type\" | wc -l: $count"
+
       # Counts the number of files of that type
       # "-type f" specifies that we are looking for regular files
       # -name "*.$type": This is an option for the find command that specifies that only files with names that match the given pattern should be selected
       count=$(find "$subdir" -type f -name "*.$type" | wc -l)
+
+      # Run the commands for finding the total size of files of the specified type in the background using a subshell and capture the output
+      # echo $BASHPID: Outputs the process ID (PID) of the current shell
+      # find "$subdir" -type f -name "*.$type" -exec stat --format="%s" {}: Finds all files of the specified type in the subdir and runs the stat command to get their sizes in bytes
+      # awk '{s+=$1} END {print s}': Adds up all the file sizes and prints the total
+      size_and_PID=$( ( echo $BASHPID; find "$subdir" -type f -name "*.$type" -exec stat --format="%s" {} + | awk '{s+=$1} END {print s}' ) )
+      # Get the PID of the command from the output of the subshell
+      commands_PID2=$(echo "$size_and_PID" | head -n 1)
+      # Get the total size of files of the specified type from the output of the subshell
+      size=$(echo "$size_and_PID" | tail -n 1)
+      # Use "numfmt" to convert the file size from bytes to a human-readable format with units
+      # "--to=iec-i" specifies the format of the output (using IEC binary prefixes)
+      # "--suffix=B" specifies that the units should be "B"
+      size_with_units=$(numfmt --to=iec-i --suffix=B "$size")
+      # Call the PID_log_file function to log the PID and the command used to find the total size of files of the specified type
+      PID_log_file "(PID: $commands_PID2)[${timestamp}] find \"$subdir\" -type f -name \"*.$type\" -exec stat --format=\"%s\" {} + | awk '{s+=\$1} END {print s}': $size_with_units"
+
       # Use "find" to search for files of the specified type in the current subdirectory
       # "-type f" specifies that we are looking for regular files (not directories, symlinks, etc.)
       # "-name "*.$type"" specifies that we are looking for files with names that end in ".$type"
@@ -190,8 +267,6 @@ function folder_content() {
       # "--suffix=B" specifies that the units should be "B"
       size_with_units=$(numfmt --to=iec-i --suffix=B "$size")
       echo "File type: $type, Count: $count, Size: $size_with_units"
-      commands_PID=$(pgrep -f "$count")
-      PID_log_file "(PID: $commands_PID)[${timestamp}] Count: $count"
       echo ""
 
     done
@@ -206,6 +281,36 @@ function folder_content() {
     echo "Longest file name: $longest"
     echo ""
     echo ""
+
+    # Run the commands for finding the shortest file name in the background using a subshell and capture the output
+    # echo $BASHPID: Outputs the process ID (PID) of the current shell
+    # find "$subdir" -type f -printf '%f\n': Finds all files in the subdir and outputs their names followed by a newline
+    # awk '{ print length, $0 }': Adds the length of each file name to the beginning of the line, separated by a space
+    # sort -n: Sorts the lines numerically based on the file name lengths
+    # head -n1: Selects the first line (the line with the shortest file name)
+    # awk '{ print $2 }': Prints only the file name without the length
+    shortest_and_PID=$( ( echo $BASHPID; find "$subdir" -type f -printf '%f\n' | awk '{ print length, $0 }' | sort -n | head -n1 | awk '{ print $2 }' ) )
+    # Get the PID of the command from the output of the subshell
+    commands_PID=$(echo "$shortest_and_PID" | head -n 1)
+    # Get the shortest file name from the output of the subshell
+    shortest=$(echo "$shortest_and_PID" | tail -n 1)
+    # Call the PID_log_file function to log the PID and the command used to find the shortest file name
+    PID_log_file "(PID: $commands_PID)[${timestamp}] find \"$subdir\" -type f -printf '%f\\n' | awk '{ print length, \$0 }' | sort -n | head -n1 | awk '{ print \$2 }': $shortest"
+
+    # Run the commands for finding the longest file name in the background using a subshell and capture the output
+    # echo $BASHPID: Outputs the process ID (PID) of the current shell
+    # find "$subdir" -type f -printf '%f\n': Finds all files in the subdir and outputs their names followed by a newline
+    # awk '{ print length, $0 }': Adds the length of each file name to the beginning of the line, separated by a space
+    # sort -n: Sorts the lines numerically based on the file name lengths
+    # tail -n1: Selects the last line (the line with the longest file name)
+    # awk '{ print $2 }': Prints only the file name without the length
+    longest_and_PID=$( ( echo $BASHPID; find "$subdir" -type f -printf '%f\n' | awk '{ print length, $0 }' | sort -n | tail -n1 | awk '{ print $2 }' ) )
+    # Get the PID of the command from the output of the subshell
+    commands_PID=$(echo "$longest_and_PID" | head -n 1)
+    # Get the longest file name from the output of the subshell
+    longest=$(echo "$longest_and_PID" | tail -n 1)
+    # Call the PID_log_file function to log the PID and the command used to find the longest file name
+    PID_log_file "(PID: $commands_PID)[${timestamp}] find \"$subdir\" -type f -printf '%f\\n' | awk '{ print length, \$0 }' | sort -n | tail -n1 | awk '{ print \$2 }': $longest"
 
   done
 
