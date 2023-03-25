@@ -444,7 +444,7 @@ function argument() {
 # Check the number of command-line arguments.
 if [[ $# -lt 1 || $# -gt 4 ]]; then
   echo "Invalid number of arguments."
-  echo "Usage: ./Utility_Scripting [-fc <folder_name> | -v4 | -v5 -n <word>]"
+  echo "Usage: Utility_Scripting [-fc <folder_name> | -v4 | -v5 -n <word>]"
   exit 1
 fi
 

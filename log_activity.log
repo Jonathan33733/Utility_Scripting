@@ -21,3 +21,7 @@
 2023-03-25 17:54:26 gitpod ran command: ./Utility_Scripting.sh -fc "_Directory"
 2023-03-25 17:55:30 gitpod ran command: ./Utility_Scripting.sh -fc "_Directory"
 2023-03-25 20:10:23 gitpod ran command: ./Utility_Scripting.sh -fc "_Directory"
+2023-03-25 20:23:06 gitpod ran command: Utility_Scripting.sh -v4
+2023-03-25 20:23:24 gitpod ran command: Utility_Scripting.sh -v5 -n "secert"
+2023-03-25 20:24:03 gitpod ran command: Utility_Scripting.sh -fc "_Directory"
+2023-03-25 20:24:37 gitpod ran command: ./Utility_Scripting.sh -v4
