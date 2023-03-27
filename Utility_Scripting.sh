@@ -156,7 +156,8 @@ function folder_content() {
     recent_file=$(echo "$recent_file_and_PID" | tail -n 1)
     # Call the PID_log_file function to log the PID and the command used to find the most recently modified file of the specified type
     PID_log_file "(PID: $commands_PID)[${timestamp}] find \"$subdir\" -type f -name \"*.$type\" -printf \"%T+ %p\n\" | sort -nr | head -1 | cut -d' ' -f2-: $recent_file"
-    
+    # This is going to be repeat for all the other ones to get the PID and also comments
+
     # Find the most recently modified file of this type and display its details
     # find "$subdir" -type f -name "*.$type": This command searches for regular files in the specified subdirectory that have a file name ending in the specified file type
     # -printf "%T+ %p\n" This command specifies the output format for each file that is found. %T+ tells find to output the modification time of the file in the format YYYY-MM-DDTHH:MM:SS.ssssss[±ZZ:ZZ], where the T separates the date and time, and the optional ±ZZ:ZZ specifies the time zone offset from UTC. %p tells find to output the full path of the file. 
