@@ -1,6 +1,7 @@
 #!/bin/bash
 
 function generate_v4() {
+  # https://www.cryptosys.net/pki/uuid-rfc4122.html#note1
   local uuid=""
   local updateUuid=""
   local byte7=""
@@ -49,6 +50,7 @@ function generate_v4() {
 }
 
 function generate_v5() {
+  # https://stackoverflow.com/questions/10867405/generating-v5-uuid-what-is-name-and-namespace
   # NameSpace_DNS: {6ba7b810-9dad-11d1-80b4-00c04fd430c8} got it from a site
   # https://stackoverflow.com/questions/10867405/generating-v5-uuid-what-is-name-and-namespace#:~:text=to%20be%20given.-,The%20namespace%20is%20either%20a%20UUID%20in%20string%20representation%20or,a%20string%20of%20arbitrary%20length.&text=The%20name%20is%20a%20string%20of%20arbitrary%20length.,-The%20name%20is
   local namespace="6ba7b810-9dad-11d1-80b4-00c04fd430c8"
@@ -146,6 +148,9 @@ function folder_content() {
   for subdir in $(echo "$files" | grep ":$" | sed 's/://' | sort -u); do
     echo "$subdir"
     
+    # https://unix.stackexchange.com/questions/603500/pid-of-a-nested-command-in-a-subshell
+    # https://unix.stackexchange.com/questions/697627/how-can-i-copy-bashpid-in-bash-script
+    # https://stackoverflow.com/questions/21063765/why-is-returning-the-same-id-as-the-parent-process
     # Run the commands for finding the most recently modified file of the specified type in the background using a subshell and capture the output
     # echo $BASHPID: Outputs the process ID (PID) of the current shell
     # find "$subdir" -type f -name "*.$type" -printf "%T+ %p\n" | sort -nr | head -1 | cut -d' ' -f2-: Retrieves the most recently modified file of the specified type in the subdir
@@ -362,6 +367,7 @@ function log_activity() {
   # Append the activity information to the log file
   echo "${timestamp} ${user} ran command: ${command}" >> "${log_file}"
   # Get the process IDs of the commands that are run by the current user
+  # https://stackoverflow.com/questions/27683581/why-cant-pgrep-find-this-process
   commands_PID=$(pgrep -f "$user")
   # Call the PID_log_file function to append the process ID information to the log file
   PID_log_file "(PID: $commands_PID)[${timestamp}] ${user}"
@@ -389,6 +395,7 @@ function argument() {
   local word="$3"
   local timestamp=$(date "+%Y-%m-%d %H:%M:%S")
   # Store the PID of the script
+  # https://stackoverflow.com/questions/56512690/how-to-get-bashpid-in-bash-version-3
   local PID="$$"
 
   # Use a case statement to determine which command was specified.
